@@ -1,0 +1,5905 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ALHAMD | الحمد - التشطيبات والمقاولات</title>
+
+  <meta
+    name="description"
+    content="الحمد ALHAMD للتشطيبات والمقاولات، حلول احترافية لأعمال التشطيبات الداخلية للمشروعات السكنية والتجارية في مصر."
+  >
+
+  <meta
+    name="keywords"
+    content="تشطيبات, مقاولات, تشطيب داخلي, جبس بورد, دهانات, سيراميك, كهرباء, سباكة, مصر, كفر الدوار"
+  >
+
+  <meta name="theme-color" content="#FAFAF9">
+
+  <meta property="og:title" content="ALHAMD | الحمد - التشطيبات والمقاولات">
+  <meta
+    property="og:description"
+    content="حلول احترافية للتشطيبات والمقاولات مع التركيز على الجودة والتنسيق والتنفيذ الاحترافي."
+  >
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "ALHAMD | الحمد",
+    "description": "Professional interior finishing and contracting solutions for residential and commercial projects in Egypt.",
+    "telephone": "+201019807126",
+    "email": "akhaled7835@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kafr El Dawar",
+      "addressRegion": "Beheira",
+      "addressCountry": "EG"
+    },
+    "areaServed": "Egypt"
+  }
+  </script>
+
+
+  <style>
+
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
+    :root {
+
+      --bg-primary: #FAFAF9;
+      --bg-surface: #FFFFFF;
+      --bg-subtle: #F3F1EE;
+
+      --border-color: #E5E2DC;
+
+      --text-main: #1C1917;
+      --text-muted: #57534E;
+      --text-light: #78716C;
+
+      --accent-bronze: #8C6A43;
+      --accent-hover: #735432;
+      --accent-soft: #F5EFE6;
+
+      --font-ar: 'Cairo',
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+
+      --font-en: 'Plus Jakarta Sans',
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+
+      --container-width: 1180px;
+
+      --section-padding: 110px;
+
+      --shadow-sm:
+        0 8px 30px rgba(28, 25, 23, 0.05);
+
+      --shadow-md:
+        0 20px 60px rgba(28, 25, 23, 0.10);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+
+    }
+
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+
+    body {
+      margin: 0;
+      padding: 0;
+
+      background: var(--bg-primary);
+      color: var(--text-main);
+
+      font-family: var(--font-ar);
+
+      line-height: 1.8;
+
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+
+    button {
+      cursor: pointer;
+    }
+
+
+    a {
+      color: inherit;
+    }
+
+
+    ::selection {
+      background: var(--accent-bronze);
+      color: #FFFFFF;
+    }
+
+
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
+
+    .container {
+      width: min(
+        calc(100% - 40px),
+        var(--container-width)
+      );
+
+      margin-inline: auto;
+    }
+
+
+    .section-padding {
+      padding: var(--section-padding) 0;
+    }
+
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 55px;
+    }
+
+
+    .section-tag {
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color: var(--accent-bronze);
+
+      font-size: 0.78rem;
+      font-weight: 700;
+
+      letter-spacing: 0.04em;
+    }
+
+
+    .section-title {
+      margin: 0 0 18px;
+
+      font-size: clamp(
+        2rem,
+        4vw,
+        3.15rem
+      );
+
+      line-height: 1.25;
+
+      font-weight: 700;
+
+      letter-spacing: -0.02em;
+    }
+
+
+    .section-desc {
+      margin: 0;
+
+      max-width: 720px;
+
+      color: var(--text-muted);
+
+      font-size: 1rem;
+      line-height: 2;
+    }
+
+
+    /* =========================================================
+       NAVBAR
+    ========================================================= */
+
+    .navbar {
+
+      position: fixed;
+
+      top: 0;
+      right: 0;
+      left: 0;
+
+      z-index: 1000;
+
+      background:
+        rgba(250, 250, 249, 0.94);
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      border-bottom:
+        1px solid rgba(229, 226, 220, 0.8);
+    }
+
+
+    .navbar-container {
+
+      min-height: 76px;
+
+      display: flex;
+      align-items: center;
+
+      gap: 28px;
+    }
+
+
+    .brand {
+
+      display: flex;
+      align-items: center;
+
+      flex-shrink: 0;
+
+      text-decoration: none;
+    }
+
+
+    .brand img {
+
+      width: 90px;
+      height: auto;
+
+      max-height: 50px;
+
+      object-fit: contain;
+
+      display: block;
+    }
+
+
+    .nav-links {
+
+      display: flex;
+      align-items: center;
+
+      gap: 28px;
+
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+
+    .nav-links a {
+
+      position: relative;
+
+      color: var(--text-muted);
+
+      text-decoration: none;
+
+      font-size: 0.88rem;
+      font-weight: 600;
+
+      transition:
+        color 0.2s ease;
+    }
+
+
+    .nav-links a::after {
+
+      content: "";
+
+      position: absolute;
+
+      right: 0;
+      bottom: -8px;
+
+      width: 0;
+      height: 1px;
+
+      background:
+        var(--accent-bronze);
+
+      transition:
+        width 0.25s ease;
+    }
+
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+
+    .nav-cta {
+
+      margin-right: auto;
+
+      display: flex;
+      align-items: center;
+
+      gap: 18px;
+    }
+
+
+    .language-switcher {
+
+      display: flex;
+      align-items: center;
+
+      gap: 7px;
+
+      white-space: nowrap;
+
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+
+    .lang-link {
+
+      color: var(--text-muted);
+
+      text-decoration: none;
+
+      transition:
+        color 0.2s ease;
+    }
+
+
+    .lang-link:hover,
+    .lang-link.active {
+
+      color:
+        var(--accent-bronze);
+    }
+
+
+    .language-switcher > span {
+      color: var(--border-color);
+    }
+
+
+    /* =========================================================
+       BUTTONS
+    ========================================================= */
+
+    .btn {
+
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-height: 48px;
+
+      padding:
+        0 22px;
+
+      border-radius: 6px;
+
+      border: 1px solid transparent;
+
+      text-decoration: none;
+
+      font-size: 0.86rem;
+      font-weight: 700;
+
+      white-space: nowrap;
+
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+
+    .btn-primary {
+
+      background:
+        var(--accent-bronze);
+
+      color: #FFFFFF;
+
+      border-color:
+        var(--accent-bronze);
+    }
+
+
+    .btn-primary:hover {
+
+      background:
+        var(--accent-hover);
+
+      border-color:
+        var(--accent-hover);
+    }
+
+
+    .btn-secondary {
+
+      background:
+        transparent;
+
+      color:
+        var(--text-main);
+
+      border-color:
+        var(--border-color);
+    }
+
+
+    .btn-secondary:hover {
+
+      border-color:
+        var(--accent-bronze);
+
+      color:
+        var(--accent-bronze);
+    }
+
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
+
+    .mobile-toggle {
+
+      display: none;
+
+      width: 44px;
+      height: 44px;
+
+      margin-right: auto;
+
+      border: 1px solid var(--border-color);
+
+      border-radius: 6px;
+
+      background: transparent;
+
+      color: var(--text-main);
+
+      align-items: center;
+      justify-content: center;
+
+      flex-direction: column;
+
+      gap: 5px;
+    }
+
+
+    .mobile-toggle span {
+
+      display: block;
+
+      width: 19px;
+      height: 1.5px;
+
+      background:
+        var(--text-main);
+    }
+
+
+    .mobile-menu {
+
+      position: fixed;
+
+      top: 76px;
+
+      right: 0;
+
+      width: min(
+        88vw,
+        380px
+      );
+
+      height:
+        calc(100vh - 76px);
+
+      padding: 30px 24px;
+
+      background:
+        var(--bg-surface);
+
+      border-left:
+        1px solid var(--border-color);
+
+      box-shadow:
+        var(--shadow-md);
+
+      transform:
+        translateX(100%);
+
+      transition:
+        transform 0.3s ease;
+
+      z-index: 999;
+    }
+
+
+    .mobile-menu.active {
+
+      transform:
+        translateX(0);
+    }
+
+
+    .mobile-nav-links {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 8px;
+
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+
+    .mobile-nav-link {
+
+      display: block;
+
+      padding: 13px 10px;
+
+      color:
+        var(--text-main);
+
+      text-decoration: none;
+
+      border-bottom:
+        1px solid var(--border-color);
+
+      font-weight: 600;
+    }
+
+
+    .mobile-menu .btn {
+
+      width: 100%;
+
+      margin-top: 25px;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+
+      min-height: 100vh;
+
+      padding-top: 76px;
+
+      display: flex;
+      align-items: center;
+    }
+
+
+    .hero-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1.15fr 0.85fr;
+
+      gap: 80px;
+
+      align-items: center;
+
+      padding:
+        80px 0 100px;
+    }
+
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+
+    .hero-eyebrow {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      margin-bottom: 22px;
+
+      color:
+        var(--accent-bronze);
+
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+
+    .hero-eyebrow::before {
+
+      content: "";
+
+      width: 30px;
+      height: 1px;
+
+      background:
+        var(--accent-bronze);
+    }
+
+
+    .hero-title {
+
+      margin: 0;
+
+      font-size:
+        clamp(
+          2.5rem,
+          5vw,
+          4.7rem
+        );
+
+      line-height: 1.2;
+
+      letter-spacing: -0.035em;
+
+      font-weight: 700;
+    }
+
+
+    .hero-title span {
+
+      color:
+        var(--accent-bronze);
+    }
+
+
+    .hero-desc {
+
+      max-width: 650px;
+
+      margin: 26px 0 0;
+
+      color:
+        var(--text-muted);
+
+      font-size:
+        clamp(
+          1rem,
+          1.6vw,
+          1.15rem
+        );
+
+      line-height: 2;
+    }
+
+
+    .hero-actions {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-top: 34px;
+    }
+
+
+    .hero-meta {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 22px;
+    }
+
+
+    .hero-card {
+
+      position: relative;
+
+      padding: 42px 38px;
+
+      background:
+        var(--bg-surface);
+
+      border:
+        1px solid var(--border-color);
+
+      border-radius:
+        var(--radius-lg);
+
+      box-shadow:
+        var(--shadow-sm);
+    }
+
+
+    .hero-card::before {
+
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      right: 0;
+
+      width: 70px;
+      height: 70px;
+
+      border-top:
+        1px solid var(--accent-bronze);
+
+      border-right:
+        1px solid var(--accent-bronze);
+
+      border-top-right-radius:
+        var(--radius-lg);
+    }
+
+
+    .hero-card-label {
+
+      display: block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--accent-bronze);
+
+      font-size: 0.76rem;
+      font-weight: 700;
+    }
+
+
+    .hero-card-title {
+
+      margin: 0 0 14px;
+
+      font-size: 1.35rem;
+      line-height: 1.5;
+    }
+
+
+    .hero-card-text {
+
+      margin: 0;
+
+      color:
+        var(--text-muted);
+
+      font-size: 0.92rem;
+
+      line-height: 1.9;
+    }
+
+
+    .hero-stat {
+
+      padding:
+        22px 0;
+
+      border-top:
+        1px solid var(--border-color);
+    }
+
+
+    .hero-stat strong {
+
+      display: block;
+
+      margin-bottom: 4px;
+
+      font-size: 0.95rem;
+    }
+
+
+    .hero-stat span {
+
+      color:
+        var(--text-light);
+
+      font-size: 0.8rem;
+    }
+
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .about {
+
+      background:
+        var(--bg-surface);
+
+      border-top:
+        1px solid var(--border-color);
+    }
+
+
+    .about-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        0.8fr 1.2fr;
+
+      gap: 80px;
+
+      align-items: start;
+    }
+
+
+    .about-lead {
+
+      margin: 0;
+
+      font-size:
+        clamp(
+          1.35rem,
+          2.3vw,
+          2rem
+        );
+
+      line-height: 1.7;
+
+      font-weight: 600;
+    }
+
+
+    .about-text p {
+
+      margin: 0 0 20px;
+
+      color:
+        var(--text-muted);
+
+      line-height: 2;
+    }
+
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+
+    .services-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+
+    .service-card {
+
+      padding: 30px 26px;
+
+      background:
+        var(--bg-surface);
+
+      border:
+        1px solid var(--border-color);
+
+      border-radius:
+        var(--radius-md);
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+
+    .service-card:hover {
+
+      transform:
+        translateY(-3px);
+
+      border-color:
+        rgba(140, 106, 67, 0.35);
+
+      box-shadow:
+        var(--shadow-sm);
+    }
+
+
+    .service-number {
+
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      width: 38px;
+      height: 38px;
+
+      margin-bottom: 22px;
+
+      border-radius: 50%;
+
+      background:
+        var(--accent-soft);
+
+      color:
+        var(--accent-bronze);
+
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+
+    .service-title {
+
+      margin: 0 0 10px;
+
+      font-size: 1.1rem;
+    }
+
+
+    .service-desc {
+
+      margin: 0;
+
+      color:
+        var(--text-muted);
+
+      font-size: 0.88rem;
+
+      line-height: 1.9;
+    }
+
+
+    /* =========================================================
+       CONCEPTS
+    ========================================================= */
+
+    .concepts {
+
+      background:
+        var(--bg-surface);
+
+      border-top:
+        1px solid var(--border-color);
+    }
+
+
+    .concepts-disclaimer {
+
+      margin:
+        -25px 0 35px;
+
+      padding:
+        14px 18px;
+
+      background:
+        var(--accent-soft);
+
+      border:
+        1px solid #E9DDCD;
+
+      border-radius:
+        var(--radius-sm);
+
+      color:
+        var(--text-muted);
+
+      font-size: 0.82rem;
+
+      line-height: 1.8;
+    }
+
+
+    .concepts-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 30px;
+    }
+
+
+    .concept-card {
+
+      overflow: hidden;
+
+      background:
+        var(--bg-primary);
+
+      border:
+        1px solid var(--border-color);
+
+      border-radius:
+        var(--radius-md);
+
+      transition:
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+    }
+
+
+    .concept-card:hover {
+
+      transform:
+        translateY(-3px);
+
+      box-shadow:
+        var(--shadow-sm);
+    }
+
+
+    .ba-slider {
+
+      position: relative;
+
+      width: 100%;
+
+      aspect-ratio: 16 / 10;
+
+      overflow: hidden;
+
+      cursor:
+        ew-resize;
+
+      touch-action: none;
+
+      user-select: none;
+
+      background:
+        #E7E5E4;
+    }
+
+
+    .ba-slider > .concept-img {
+
+      position: absolute;
+
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      z-index: 1;
+
+      pointer-events: none;
+
+      transition: none;
+    }
+
+
+    .ba-overlay {
+
+      position: absolute;
+
+      top: 0;
+      right: auto;
+      left: 0;
+
+      width: 50%;
+      height: 100%;
+
+      overflow: hidden;
+
+      z-index: 2;
+
+      border-right:
+        2px solid #FFFFFF;
+
+      box-sizing: border-box;
+    }
+
+
+    .ba-overlay .concept-img {
+
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+
+      max-width: none;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      pointer-events: none;
+
+      transition: none;
+    }
+
+
+    .ba-divider {
+
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+
+      width: 38px;
+      height: 38px;
+
+      transform:
+        translate(-50%, -50%);
+
+      z-index: 5;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background:
+        #FFFFFF;
+
+      border:
+        1px solid var(--border-color);
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.12);
+
+      pointer-events: none;
+    }
+
+
+    .ba-divider::before,
+    .ba-divider::after {
+
+      content: "";
+
+      width: 5px;
+      height: 5px;
+
+      border-top:
+        1.5px solid var(--text-main);
+
+      border-left:
+        1.5px solid var(--text-main);
+    }
+
+
+    .ba-divider::before {
+
+      transform:
+        rotate(-45deg);
+
+      margin-left: 2px;
+    }
+
+
+    .ba-divider::after {
+
+      transform:
+        rotate(135deg);
+
+      margin-right: 2px;
+    }
+
+
+    .ba-label {
+
+      position: absolute;
+
+      top: 16px;
+
+      z-index: 6;
+
+      padding:
+        5px 10px;
+
+      background:
+        rgba(28, 25, 23, 0.78);
+
+      color:
+        #FFFFFF;
+
+      border-radius:
+        4px;
+
+      font-size: 0.65rem;
+      font-weight: 700;
+
+      letter-spacing: 0.04em;
+
+      pointer-events: none;
+    }
+
+
+    .ba-label-before {
+      left: 16px;
+    }
+
+
+    .ba-label-after {
+      right: 16px;
+    }
+
+
+    .ba-range {
+
+      position: absolute;
+
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      margin: 0;
+
+      padding: 0;
+
+      opacity: 0;
+
+      z-index: 10;
+
+      cursor:
+        ew-resize;
+
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+
+    .concept-info {
+
+      padding: 25px 26px 28px;
+    }
+
+
+    .concept-meta {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      margin-bottom: 7px;
+    }
+
+
+    .concept-number {
+
+      color:
+        var(--accent-bronze);
+
+      font-size: 0.72rem;
+
+      font-weight: 700;
+    }
+
+
+    .concept-category {
+
+      color:
+        var(--text-light);
+
+      font-size: 0.73rem;
+    }
+
+
+    .concept-title {
+
+      margin: 0;
+
+      font-size: 1.2rem;
+    }
+
+
+    /* =========================================================
+       REAL PROJECTS
+    ========================================================= */
+
+    .projects {
+
+      background:
+        var(--bg-subtle);
+    }
+
+
+    .empty-state {
+
+      padding:
+        70px 30px;
+
+      text-align: center;
+
+      background:
+        var(--bg-surface);
+
+      border:
+        1px dashed var(--border-color);
+
+      border-radius:
+        var(--radius-lg);
+    }
+
+
+    .empty-state-title {
+
+      margin: 0 0 10px;
+
+      font-size: 1.5rem;
+    }
+
+
+    .empty-state-desc {
+
+      max-width: 650px;
+
+      margin:
+        0 auto 25px;
+
+      color:
+        var(--text-muted);
+
+      line-height: 2;
+    }
+
+
+    /* =========================================================
+       WHY ALHAMD
+    ========================================================= */
+
+    .why-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 20px;
+    }
+
+
+    .why-card {
+
+      padding:
+        30px 24px;
+
+      border-top:
+        2px solid var(--accent-bronze);
+
+      background:
+        var(--bg-surface);
+    }
+
+
+    .why-title {
+
+      margin:
+        0 0 10px;
+
+      font-size: 1rem;
+    }
+
+
+    .why-desc {
+
+      margin: 0;
+
+      color:
+        var(--text-muted);
+
+      font-size: 0.86rem;
+
+      line-height: 1.9;
+    }
+
+
+    /* =========================================================
+       PROCESS
+    ========================================================= */
+
+    .process {
+
+      background:
+        var(--bg-subtle);
+    }
+
+
+    .process-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+
+    .process-card {
+
+      position: relative;
+
+      padding:
+        30px 25px;
+
+      background:
+        var(--bg-surface);
+
+      border:
+        1px solid var(--border-color);
+
+      border-radius:
+        var(--radius-md);
+    }
+
+
+    .process-number {
+
+      display: block;
+
+      margin-bottom: 16px;
+
+      color:
+        var(--accent-bronze);
+
+      font-size: 0.8rem;
+
+      font-weight: 700;
+    }
+
+
+    .process-title {
+
+      margin:
+        0 0 8px;
+
+      font-size: 1.05rem;
+    }
+
+
+    .process-desc {
+
+      margin: 0;
+
+      color:
+        var(--text-muted);
+
+      font-size: 0.85rem;
+
+      line-height: 1.9;
+    }
+
+
+    /* =========================================================
+       CTA
+    ========================================================= */
+
+    .cta {
+
+      padding:
+        95px 0;
+
+      background:
+        var(--text-main);
+
+      color:
+        #FFFFFF;
+    }
+
+
+    .cta-inner {
+
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 40px;
+    }
+
+
+    .cta-title {
+
+      margin: 0 0 12px;
+
+      font-size:
+        clamp(
+          2rem,
+          4vw,
+          3.1rem
+        );
+
+      line-height: 1.3;
+    }
+
+
+    .cta-desc {
+
+      max-width: 680px;
+
+      margin: 0;
+
+      color:
+        rgba(255,255,255,0.7);
+
+      line-height: 2;
+    }
+
+
+    .cta-actions {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      flex-shrink: 0;
+    }
+
+
+    .cta .btn-secondary {
+
+      color: #FFFFFF;
+
+      border-color:
+        rgba(255,255,255,0.25);
+    }
+
+
+    .cta .btn-secondary:hover {
+
+      border-color:
+        rgba(255,255,255,0.7);
+
+      color: #FFFFFF;
+    }
+
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact {
+
+      background:
+        var(--bg-surface);
+    }
+
+
+    .contact-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        0.75fr 1.25fr;
+
+      gap: 70px;
+
+      align-items: start;
+    }
+
+
+    .contact-intro {
+
+      margin: 0 0 30px;
+
+      color:
+        var(--text-muted);
+
+      line-height: 2;
+    }
+
+
+    .contact-list {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 20px;
+    }
+
+
+    .contact-item {
+
+      padding-bottom: 20px;
+
+      border-bottom:
+        1px solid var(--border-color);
+    }
+
+
+    .contact-label {
+
+      display: block;
+
+      margin-bottom: 4px;
+
+      color:
+        var(--text-light);
+
+      font-size: 0.72rem;
+
+      font-weight: 700;
+    }
+
+
+    .contact-value {
+
+      color:
+        var(--text-main);
+
+      text-decoration: none;
+
+      font-size: 0.92rem;
+
+      font-weight: 600;
+    }
+
+
+    .contact-value:hover {
+
+      color:
+        var(--accent-bronze);
+    }
+
+
+    /* =========================================================
+       FORM
+    ========================================================= */
+
+    .quote-form {
+
+      padding:
+        36px;
+
+      background:
+        var(--bg-primary);
+
+      border:
+        1px solid var(--border-color);
+
+      border-radius:
+        var(--radius-lg);
+    }
+
+
+    .form-title {
+
+      margin:
+        0 0 25px;
+
+      font-size: 1.5rem;
+    }
+
+
+    .form-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 18px;
+    }
+
+
+    .form-group {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 7px;
+    }
+
+
+    .form-group.full {
+
+      grid-column:
+        1 / -1;
+    }
+
+
+    .form-group label {
+
+      color:
+        var(--text-main);
+
+      font-size: 0.78rem;
+
+      font-weight: 700;
+    }
+
+
+    .form-group label span {
+      color:
+        var(--accent-bronze);
+    }
+
+
+    .form-control {
+
+      width: 100%;
+
+      min-height: 50px;
+
+      padding:
+        11px 14px;
+
+      border:
+        1px solid var(--border-color);
+
+      border-radius:
+        6px;
+
+      background:
+        #FFFFFF;
+
+      color:
+        var(--text-main);
+
+      outline: none;
+
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+
+    textarea.form-control {
+
+      min-height: 130px;
+
+      resize: vertical;
+    }
+
+
+    .form-control:focus {
+
+      border-color:
+        var(--accent-bronze);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(140,106,67,0.10);
+    }
+
+
+    .form-submit {
+
+      width: 100%;
+
+      margin-top: 20px;
+    }
+
+
+    .form-notice {
+
+      display: none;
+
+      margin-top: 15px;
+
+      padding:
+        14px 16px;
+
+      background:
+        var(--accent-soft);
+
+      border:
+        1px solid #E9DDCD;
+
+      border-radius:
+        6px;
+
+      color:
+        var(--text-muted);
+
+      font-size: 0.82rem;
+
+      line-height: 1.8;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    .footer {
+
+      padding:
+        60px 0 25px;
+
+      background:
+        var(--bg-primary);
+
+      border-top:
+        1px solid var(--border-color);
+    }
+
+
+    .footer-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1.5fr 1fr 1fr;
+
+      gap: 50px;
+
+      padding-bottom: 45px;
+    }
+
+
+    .footer-brand {
+
+      margin-bottom: 15px;
+    }
+
+
+    .footer-brand img {
+
+      width: 85px;
+      height: auto;
+    }
+
+
+    .footer-desc {
+
+      max-width: 390px;
+
+      margin: 0;
+
+      color:
+        var(--text-muted);
+
+      font-size: 0.85rem;
+
+      line-height: 1.9;
+    }
+
+
+    .footer-heading {
+
+      margin:
+        0 0 16px;
+
+      font-size: 0.9rem;
+    }
+
+
+    .footer-links {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 8px;
+
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+
+    .footer-links a {
+
+      color:
+        var(--text-muted);
+
+      text-decoration: none;
+
+      font-size: 0.82rem;
+    }
+
+
+    .footer-links a:hover {
+
+      color:
+        var(--accent-bronze);
+    }
+
+
+    .footer-bottom {
+
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+
+      padding-top: 22px;
+
+      border-top:
+        1px solid var(--border-color);
+
+      color:
+        var(--text-light);
+
+      font-size: 0.72rem;
+    }
+
+
+    /* =========================================================
+       MODAL
+    ========================================================= */
+
+    .modal-overlay {
+
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 2000;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 25px;
+
+      background:
+        rgba(20,18,16,0.78);
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+    }
+
+
+    .modal-overlay.active {
+
+      opacity: 1;
+
+      visibility: visible;
+    }
+
+
+    .modal {
+
+      width: min(
+        1000px,
+        100%
+      );
+
+      max-height:
+        92vh;
+
+      overflow: auto;
+
+      background:
+        var(--bg-surface);
+
+      border-radius:
+        var(--radius-lg);
+
+      box-shadow:
+        0 30px 100px rgba(0,0,0,0.25);
+    }
+
+
+    .modal-header {
+
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+
+      padding:
+        22px 25px;
+
+      border-bottom:
+        1px solid var(--border-color);
+    }
+
+
+    .modal-number {
+
+      display: block;
+
+      color:
+        var(--accent-bronze);
+
+      font-size: 0.7rem;
+
+      font-weight: 700;
+    }
+
+
+    .modal-title {
+
+      margin:
+        3px 0;
+
+      font-size: 1.25rem;
+    }
+
+
+    .modal-category {
+
+      color:
+        var(--text-light);
+
+      font-size: 0.75rem;
+    }
+
+
+    .modal-close {
+
+      width: 40px;
+      height: 40px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      flex-shrink: 0;
+
+      border:
+        1px solid var(--border-color);
+
+      border-radius:
+        6px;
+
+      background:
+        transparent;
+
+      color:
+        var(--text-main);
+
+      font-size: 1.4rem;
+
+      line-height: 1;
+    }
+
+
+    .modal-close:hover {
+
+      color:
+        var(--accent-bronze);
+
+      border-color:
+        var(--accent-bronze);
+    }
+
+
+    .modal-body {
+
+      padding:
+        25px;
+    }
+
+
+    .modal-slider {
+
+      position: relative;
+
+      width: 100%;
+
+      aspect-ratio: 16 / 10;
+
+      overflow: hidden;
+
+      cursor:
+        ew-resize;
+
+      touch-action: none;
+
+      user-select: none;
+
+      background:
+        #E7E5E4;
+    }
+
+
+    .modal-slider > img {
+
+      position: absolute;
+
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      pointer-events: none;
+    }
+
+
+    .modal-slider #imgAfter {
+      z-index: 1;
+    }
+
+
+    .modal-slider .ba-overlay {
+
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 50%;
+      height: 100%;
+
+      overflow: hidden;
+
+      z-index: 2;
+
+      border-right:
+        2px solid #FFFFFF;
+    }
+
+
+    .modal-slider .ba-overlay img {
+
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 1000px;
+      max-width: none;
+
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+
+    .modal-slider .ba-divider {
+
+      z-index: 5;
+    }
+
+
+    .modal-description {
+
+      margin:
+        20px 0 0;
+
+      color:
+        var(--text-muted);
+
+      font-size: 0.83rem;
+
+      line-height: 1.9;
+
+      text-align: center;
+    }
+
+
+    .modal-footer {
+
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 12px;
+
+      padding:
+        0 25px 25px;
+    }
+
+
+    .modal-nav-btn {
+
+      min-height: 44px;
+
+      padding:
+        0 16px;
+
+      border:
+        1px solid var(--border-color);
+
+      border-radius:
+        6px;
+
+      background:
+        transparent;
+
+      color:
+        var(--text-main);
+
+      font-size: 0.78rem;
+
+      font-weight: 700;
+    }
+
+
+    .modal-nav-btn:hover {
+
+      border-color:
+        var(--accent-bronze);
+
+      color:
+        var(--accent-bronze);
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 1000px) {
+
+      :root {
+        --section-padding: 85px;
+      }
+
+
+      .nav-links {
+        gap: 17px;
+      }
+
+
+      .navbar-container {
+        gap: 18px;
+      }
+
+
+      .hero-grid {
+        gap: 45px;
+      }
+
+
+      .services-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .why-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+    }
+
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+
+      .nav-cta {
+        display: none;
+      }
+
+
+      .mobile-toggle {
+        display: flex;
+      }
+
+
+      .navbar-container {
+        justify-content: space-between;
+      }
+
+
+      .hero-grid {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 50px;
+      }
+
+
+      .hero-meta {
+        max-width: 650px;
+      }
+
+
+      .about-grid {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 35px;
+      }
+
+
+      .contact-grid {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 45px;
+      }
+
+
+      .footer-grid {
+
+        grid-template-columns:
+          1fr 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      :root {
+        --section-padding: 70px;
+      }
+
+
+      .container {
+        width:
+          min(
+            calc(100% - 30px),
+            var(--container-width)
+          );
+      }
+
+
+      .concepts-grid {
+        grid-template-columns:
+          1fr;
+      }
+
+
+      .process-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .cta-inner {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+
+      .footer-grid {
+        grid-template-columns:
+          1fr;
+      }
+
+
+      .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+
+      .form-grid {
+        grid-template-columns:
+          1fr;
+      }
+
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .navbar-container {
+        min-height: 68px;
+      }
+
+
+      .brand img {
+        width: 78px;
+      }
+
+
+      .mobile-menu {
+        top: 68px;
+
+        height:
+          calc(100vh - 68px);
+      }
+
+
+      .hero {
+        padding-top: 68px;
+      }
+
+
+      .hero-grid {
+        padding:
+          65px 0 75px;
+      }
+
+
+      .hero-title {
+        font-size:
+          clamp(
+            2.15rem,
+            11vw,
+            3.2rem
+          );
+      }
+
+
+      .hero-actions,
+      .cta-actions {
+        width: 100%;
+      }
+
+
+      .hero-actions .btn,
+      .cta-actions .btn {
+        width: 100%;
+      }
+
+
+      .services-grid,
+      .why-grid,
+      .process-grid {
+        grid-template-columns:
+          1fr;
+      }
+
+
+      .hero-card {
+        padding:
+          30px 25px;
+      }
+
+
+      .concept-info {
+        padding:
+          20px;
+      }
+
+
+      .quote-form {
+        padding:
+          25px 20px;
+      }
+
+
+      .modal-overlay {
+        padding:
+          10px;
+      }
+
+
+      .modal {
+        max-height:
+          96vh;
+
+        border-radius:
+          14px;
+      }
+
+
+      .modal-header {
+        padding:
+          17px;
+      }
+
+
+      .modal-body {
+        padding:
+          15px;
+      }
+
+
+      .modal-footer {
+        padding:
+          0 15px 15px;
+      }
+
+
+      .modal-nav-btn {
+        flex: 1;
+      }
+
+
+      .modal-slider {
+        aspect-ratio:
+          4 / 3;
+      }
+
+
+      .modal-description {
+        font-size:
+          0.75rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================= -->
+
+  <header class="navbar">
+
+    <div class="container navbar-container">
+
+      <a
+        href="#"
+        class="brand"
+        aria-label="الرئيسية - الحمد"
+      >
+        <img
+          src="assets/images/alhamd-logo.png"
+          alt="ALHAMD | الحمد"
+        >
+      </a>
+
+
+      <nav aria-label="التنقل الرئيسي">
+
+        <ul class="nav-links">
+
+          <li>
+            <a href="#about">
+              من نحن
+            </a>
+          </li>
+
+          <li>
+            <a href="#services">
+              خدماتنا
+            </a>
+          </li>
+
+          <li>
+            <a href="#concepts">
+              التصورات
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects">
+              المشاريع
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              تواصل معنا
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <div class="nav-cta">
+
+        <div class="language-switcher">
+
+          <a
+            href="index.html"
+            class="lang-link"
+          >
+            English
+          </a>
+
+          <span>|</span>
+
+          <a
+            href="ar.html"
+            class="lang-link active"
+            aria-current="page"
+          >
+            العربية
+          </a>
+
+        </div>
+
+
+        <a
+          href="#contact"
+          class="btn btn-primary"
+        >
+          اطلب عرض سعر
+        </a>
+
+      </div>
+
+
+      <button
+        class="mobile-toggle"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="فتح القائمة"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       MOBILE MENU
+  ========================================================= -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-hidden="true"
+  >
+
+    <div class="language-switcher">
+
+      <a
+        href="index.html"
+        class="lang-link"
+      >
+        English
+      </a>
+
+      <span>|</span>
+
+      <a
+        href="ar.html"
+        class="lang-link active"
+      >
+        العربية
+      </a>
+
+    </div>
+
+
+    <ul class="mobile-nav-links">
+
+      <li>
+        <a
+          href="#about"
+          class="mobile-nav-link"
+        >
+          من نحن
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#services"
+          class="mobile-nav-link"
+        >
+          خدماتنا
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#concepts"
+          class="mobile-nav-link"
+        >
+          التصورات
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#projects"
+          class="mobile-nav-link"
+        >
+          المشاريع
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#contact"
+          class="mobile-nav-link"
+        >
+          تواصل معنا
+        </a>
+      </li>
+
+    </ul>
+
+
+    <a
+      href="#contact"
+      class="btn btn-primary"
+    >
+      اطلب عرض سعر
+    </a>
+
+  </div>
+
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+
+  <main>
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="hero-eyebrow">
+            ALHAMD | الحمد
+          </div>
+
+
+          <h1 class="hero-title">
+
+            حلول احترافية
+            <span>للتشطيبات</span>
+            والمقاولات للمشروعات السكنية والتجارية
+
+          </h1>
+
+
+          <p class="hero-desc">
+
+            حلول موثوقة لأعمال التشطيبات والمقاولات مع التركيز على الجودة،
+            والتنسيق، والتنفيذ الاحترافي.
+
+            <br>
+
+            نعمل مع المكاتب الهندسية والمقاولين وأصحاب المشروعات في مختلف أنحاء مصر.
+
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              href="#contact"
+              class="btn btn-primary"
+            >
+              اطلب عرض سعر
+            </a>
+
+
+            <a
+              href="#services"
+              class="btn btn-secondary"
+            >
+              استكشف خدماتنا
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-meta">
+
+          <div class="hero-card">
+
+            <span class="hero-card-label">
+              تركيز هندسي
+            </span>
+
+
+            <h2 class="hero-card-title">
+              المقاولات والتنسيق الفني
+            </h2>
+
+
+            <p class="hero-card-text">
+
+              نربط بين الرؤية المعمارية والتنفيذ الفعلي
+              من خلال معايير واضحة وتنسيق احترافي وتواصل مستمر.
+
+            </p>
+
+          </div>
+
+
+          <div class="hero-stat">
+
+            <strong>
+              الالتزام بالمواصفات
+            </strong>
+
+            <span>
+              العمل وفقًا للرسومات والمواصفات ومتطلبات المشروع المتفق عليها.
+            </span>
+
+          </div>
+
+
+          <div class="hero-stat">
+
+            <strong>
+              إشراف هندسي منظم
+            </strong>
+
+            <span>
+              تنسيق ومتابعة احترافية لضمان تنفيذ الأعمال بالشكل المطلوب.
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================= -->
+
+    <section
+      id="about"
+      class="section-padding about"
+    >
+
+      <div class="container">
+
+        <div class="about-grid">
+
+          <div>
+
+            <span class="section-tag">
+              من نحن
+            </span>
+
+            <h2 class="section-title">
+              شريكك في أعمال التشطيبات والمقاولات
+            </h2>
+
+          </div>
+
+
+          <div class="about-text">
+
+            <p class="about-lead">
+
+              الحمد ALHAMD هي شركة متخصصة في أعمال التشطيبات الداخلية
+              والمقاولات للمشروعات السكنية والتجارية.
+
+            </p>
+
+
+            <p>
+
+              نعمل مع المكاتب الهندسية والمقاولين وأصحاب المشروعات
+              لتقديم حلول تشطيبات موثوقة، مع التركيز على الجودة،
+              والتنسيق، والتنفيذ في الوقت المتفق عليه.
+
+            </p>
+
+
+            <p>
+
+              هدفنا هو تحويل الرسومات والمواصفات ومتطلبات المشروع
+              إلى تنفيذ عملي منظم يحافظ على جودة التفاصيل النهائية.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SERVICES
+    ========================================================= -->
+
+    <section
+      id="services"
+      class="section-padding"
+    >
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            خدماتنا
+          </span>
+
+          <h2 class="section-title">
+            حلول تشطيبات متكاملة للمشروعات
+          </h2>
+
+          <p class="section-desc">
+
+            نقدم مجموعة متكاملة من أعمال التشطيبات الداخلية
+            للمشروعات السكنية والتجارية، مع إمكانية تنفيذ أكثر
+            من بند ضمن مشروع واحد.
+
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              01
+            </span>
+
+            <h3 class="service-title">
+              الجبس والأسقف
+            </h3>
+
+            <p class="service-desc">
+
+              تنفيذ الجبس بورد والأسقف المعلقة
+              وأعمال الأسقف الديكورية المختلفة.
+
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              02
+            </span>
+
+            <h3 class="service-title">
+              أعمال الدهانات
+            </h3>
+
+            <p class="service-desc">
+
+              أعمال الدهانات والتشطيبات الداخلية والخارجية
+              بمستويات تنفيذ مناسبة لمتطلبات المشروع.
+
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              03
+            </span>
+
+            <h3 class="service-title">
+              الأرضيات والسيراميك
+            </h3>
+
+            <p class="service-desc">
+
+              تركيب السيراميك والبورسلين والرخام
+              وأعمال الأرضيات المختلفة.
+
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              04
+            </span>
+
+            <h3 class="service-title">
+              الأعمال الكهربائية
+            </h3>
+
+            <p class="service-desc">
+
+              تنفيذ التركيبات الكهربائية وأعمال التشطيب
+              المرتبطة بالمشروعات السكنية والتجارية.
+
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              05
+            </span>
+
+            <h3 class="service-title">
+              أعمال السباكة
+            </h3>
+
+            <p class="service-desc">
+
+              تنفيذ أعمال السباكة والتركيبات الصحية
+              ضمن مراحل التشطيب المختلفة.
+
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              06
+            </span>
+
+            <h3 class="service-title">
+              النجارة والأعمال الخشبية
+            </h3>
+
+            <p class="service-desc">
+
+              الأبواب والمطابخ والدواليب والأعمال الخشبية
+              المصممة وفقًا لاحتياجات المشروع.
+
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              07
+            </span>
+
+            <h3 class="service-title">
+              التشطيبات الداخلية المتكاملة
+            </h3>
+
+            <p class="service-desc">
+
+              تنفيذ مجموعة متكاملة من أعمال التشطيب
+              للمشروعات التي تتطلب أكثر من تخصص.
+
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONCEPTS
+    ========================================================= -->
+
+    <section
+      id="concepts"
+      class="section-padding concepts"
+    >
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            تصورات تصميمية
+          </span>
+
+          <h2 class="section-title">
+            مجموعة من التصورات التي توضح رؤية الحمد في التشطيبات
+          </h2>
+
+          <p class="section-desc">
+
+            استكشف تصورات تفاعلية قبل وبعد توضح كيف يمكن أن يتغير
+            الفراغ من خلال أعمال التشطيب والمواد والإضاءة والتفاصيل.
+
+          </p>
+
+        </div>
+
+
+        <div class="concepts-disclaimer">
+
+          هذه التصورات عبارة عن صور تصميمية افتراضية تم إعدادها
+          لإظهار رؤية الحمد وقدراتها في أعمال التشطيبات.
+          ولا تمثل هذه الصور مشروعات مكتملة أو مشروعات منفذة بالفعل بواسطة الحمد.
+
+        </div>
+
+
+        <div class="concepts-grid">
+
+
+          <!-- Concept 01 -->
+
+          <article
+            class="concept-card"
+            data-concept="modern-villa"
+          >
+
+            <div class="ba-slider">
+
+              <img
+                class="concept-img"
+                src="assets/concepts/modern-villa-after.jpg"
+                alt="تصور تصميمي لفيلا عصرية بعد التشطيب"
+                loading="lazy"
+              >
+
+
+              <div class="ba-overlay">
+
+                <img
+                  class="concept-img"
+                  src="assets/concepts/modern-villa-before.jpg"
+                  alt="الفراغ قبل التشطيب - تصور لفيلا عصرية"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <div
+                class="ba-divider"
+                aria-hidden="true"
+              ></div>
+
+
+              <span class="ba-label ba-label-before">
+                قبل
+              </span>
+
+
+              <span class="ba-label ba-label-after">
+                بعد
+              </span>
+
+
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="مقارنة قبل وبعد الفيلا العصرية"
+              >
+
+            </div>
+
+
+            <div class="concept-info">
+
+              <div class="concept-meta">
+
+                <span class="concept-number">
+                  01
+                </span>
+
+                <span class="concept-category">
+                  تصور داخلي سكني
+                </span>
+
+              </div>
+
+
+              <h3 class="concept-title">
+                فيلا عصرية
+              </h3>
+
+            </div>
+
+          </article>
+
+
+          <!-- Concept 02 -->
+
+          <article
+            class="concept-card"
+            data-concept="contemporary-apartment"
+          >
+
+            <div class="ba-slider">
+
+              <img
+                class="concept-img"
+                src="assets/concepts/contemporary-apartment-after.jpg"
+                alt="تصور تصميمي لشقة عصرية بعد التشطيب"
+                loading="lazy"
+              >
+
+
+              <div class="ba-overlay">
+
+                <img
+                  class="concept-img"
+                  src="assets/concepts/contemporary-apartment-before.jpg"
+                  alt="الفراغ قبل التشطيب - تصور لشقة عصرية"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <div
+                class="ba-divider"
+                aria-hidden="true"
+              ></div>
+
+
+              <span class="ba-label ba-label-before">
+                قبل
+              </span>
+
+
+              <span class="ba-label ba-label-after">
+                بعد
+              </span>
+
+
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="مقارنة قبل وبعد الشقة العصرية"
+              >
+
+            </div>
+
+
+            <div class="concept-info">
+
+              <div class="concept-meta">
+
+                <span class="concept-number">
+                  02
+                </span>
+
+                <span class="concept-category">
+                  تصور داخلي سكني
+                </span>
+
+              </div>
+
+
+              <h3 class="concept-title">
+                شقة عصرية
+              </h3>
+
+            </div>
+
+          </article>
+
+
+          <!-- Concept 03 -->
+
+          <article
+            class="concept-card"
+            data-concept="corporate-office"
+          >
+
+            <div class="ba-slider">
+
+              <img
+                class="concept-img"
+                src="assets/concepts/corporate-office-after.jpg"
+                alt="تصور تصميمي لمكتب شركة بعد التشطيب"
+                loading="lazy"
+              >
+
+
+              <div class="ba-overlay">
+
+                <img
+                  class="concept-img"
+                  src="assets/concepts/corporate-office-before.jpg"
+                  alt="الفراغ قبل التشطيب - تصور لمكتب شركة"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <div
+                class="ba-divider"
+                aria-hidden="true"
+              ></div>
+
+
+              <span class="ba-label ba-label-before">
+                قبل
+              </span>
+
+
+              <span class="ba-label ba-label-after">
+                بعد
+              </span>
+
+
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="مقارنة قبل وبعد مكتب الشركة"
+              >
+
+            </div>
+
+
+            <div class="concept-info">
+
+              <div class="concept-meta">
+
+                <span class="concept-number">
+                  03
+                </span>
+
+                <span class="concept-category">
+                  تصور داخلي تجاري
+                </span>
+
+              </div>
+
+
+              <h3 class="concept-title">
+                مكتب شركة
+              </h3>
+
+            </div>
+
+          </article>
+
+
+          <!-- Concept 04 -->
+
+          <article
+            class="concept-card"
+            data-concept="executive-reception"
+          >
+
+            <div class="ba-slider">
+
+              <img
+                class="concept-img"
+                src="assets/concepts/executive-reception-after.jpg"
+                alt="تصور تصميمي لاستقبال تنفيذي بعد التشطيب"
+                loading="lazy"
+              >
+
+
+              <div class="ba-overlay">
+
+                <img
+                  class="concept-img"
+                  src="assets/concepts/executive-reception-before.jpg"
+                  alt="الفراغ قبل التشطيب - تصور لاستقبال تنفيذي"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <div
+                class="ba-divider"
+                aria-hidden="true"
+              ></div>
+
+
+              <span class="ba-label ba-label-before">
+                قبل
+              </span>
+
+
+              <span class="ba-label ba-label-after">
+                بعد
+              </span>
+
+
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="مقارنة قبل وبعد الاستقبال التنفيذي"
+              >
+
+            </div>
+
+
+            <div class="concept-info">
+
+              <div class="concept-meta">
+
+                <span class="concept-number">
+                  04
+                </span>
+
+                <span class="concept-category">
+                  تصور داخلي إداري
+                </span>
+
+              </div>
+
+
+              <h3 class="concept-title">
+                استقبال تنفيذي
+              </h3>
+
+            </div>
+
+          </article>
+
+
+          <!-- Concept 05 -->
+
+          <article
+            class="concept-card"
+            data-concept="modern-kitchen"
+          >
+
+            <div class="ba-slider">
+
+              <img
+                class="concept-img"
+                src="assets/concepts/modern-kitchen-after.jpg"
+                alt="تصور تصميمي لمطبخ عصري بعد التشطيب"
+                loading="lazy"
+              >
+
+
+              <div class="ba-overlay">
+
+                <img
+                  class="concept-img"
+                  src="assets/concepts/modern-kitchen-before.jpg"
+                  alt="الفراغ قبل التشطيب - تصور لمطبخ عصري"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <div
+                class="ba-divider"
+                aria-hidden="true"
+              ></div>
+
+
+              <span class="ba-label ba-label-before">
+                قبل
+              </span>
+
+
+              <span class="ba-label ba-label-after">
+                بعد
+              </span>
+
+
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="مقارنة قبل وبعد المطبخ العصري"
+              >
+
+            </div>
+
+
+            <div class="concept-info">
+
+              <div class="concept-meta">
+
+                <span class="concept-number">
+                  05
+                </span>
+
+                <span class="concept-category">
+                  تصور داخلي سكني
+                </span>
+
+              </div>
+
+
+              <h3 class="concept-title">
+                مطبخ عصري
+              </h3>
+
+            </div>
+
+          </article>
+
+
+          <!-- Concept 06 -->
+
+          <article
+            class="concept-card"
+            data-concept="modern-commercial"
+          >
+
+            <div class="ba-slider">
+
+              <img
+                class="concept-img"
+                src="assets/concepts/modern-commercial-after.jpg"
+                alt="تصور تصميمي لمساحة تجارية عصرية بعد التشطيب"
+                loading="lazy"
+              >
+
+
+              <div class="ba-overlay">
+
+                <img
+                  class="concept-img"
+                  src="assets/concepts/modern-commercial-before.jpg"
+                  alt="الفراغ قبل التشطيب - تصور لمساحة تجارية عصرية"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <div
+                class="ba-divider"
+                aria-hidden="true"
+              ></div>
+
+
+              <span class="ba-label ba-label-before">
+                قبل
+              </span>
+
+
+              <span class="ba-label ba-label-after">
+                بعد
+              </span>
+
+
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="مقارنة قبل وبعد المساحة التجارية"
+              >
+
+            </div>
+
+
+            <div class="concept-info">
+
+              <div class="concept-meta">
+
+                <span class="concept-number">
+                  06
+                </span>
+
+                <span class="concept-category">
+                  تصور داخلي تجاري
+                </span>
+
+              </div>
+
+
+              <h3 class="concept-title">
+                مساحة تجارية عصرية
+              </h3>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         REAL PROJECTS
+    ========================================================= -->
+
+    <section
+      id="projects"
+      class="section-padding projects"
+    >
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            مشاريع حقيقية
+          </span>
+
+          <h2 class="section-title">
+            مشروعاتنا المنفذة
+          </h2>
+
+          <p class="section-desc">
+
+            سيتم عرض مشروعات الحمد المنفذة فعليًا هنا
+            مع توفر توثيق وصور مناسبة للمشروعات.
+
+          </p>
+
+        </div>
+
+
+        <div class="empty-state">
+
+          <h3 class="empty-state-title">
+            معرض المشروعات قريبًا
+          </h3>
+
+
+          <p class="empty-state-desc">
+
+            سيتم إضافة المشروعات الحقيقية التي تم تنفيذها بواسطة الحمد
+            بمجرد توفر توثيق وصور مناسبة للأعمال المنفذة.
+
+          </p>
+
+
+          <a
+            href="#contact"
+            class="btn btn-secondary"
+          >
+            ناقش مشروعك معنا
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         WHY ALHAMD
+    ========================================================= -->
+
+    <section class="section-padding">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            لماذا الحمد؟
+          </span>
+
+          <h2 class="section-title">
+            أسلوب عمل يعتمد على الجودة والتنسيق
+          </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+          <article class="why-card">
+
+            <h3 class="why-title">
+              إشراف هندسي
+            </h3>
+
+            <p class="why-desc">
+
+              تنسيق احترافي وإشراف هندسي منظم
+              خلال مراحل التنفيذ.
+
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <h3 class="why-title">
+              التركيز على الجودة
+            </h3>
+
+            <p class="why-desc">
+
+              اهتمام بالخامات وجودة التنفيذ
+              وتفاصيل التشطيب النهائية.
+
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <h3 class="why-title">
+              تواصل واضح
+            </h3>
+
+            <p class="why-desc">
+
+              تنسيق واضح ومستمر مع العميل
+              والمكتب الهندسي وفريق المشروع.
+
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <h3 class="why-title">
+              الالتزام
+            </h3>
+
+            <p class="why-desc">
+
+              الالتزام بالمواصفات والجداول الزمنية
+              ومتطلبات المشروع المتفق عليها.
+
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         PROCESS
+    ========================================================= -->
+
+    <section class="section-padding process">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            آلية العمل
+          </span>
+
+          <h2 class="section-title">
+            من التواصل حتى التسليم
+          </h2>
+
+          <p class="section-desc">
+
+            خطوات واضحة تساعد على تنظيم المشروع
+            وتقليل سوء الفهم خلال مراحل التنفيذ.
+
+          </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              01
+            </span>
+
+            <h3 class="process-title">
+              التواصل
+            </h3>
+
+            <p class="process-desc">
+              مناقشة المشروع والاحتياجات الأساسية.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              02
+            </span>
+
+            <h3 class="process-title">
+              مراجعة المشروع
+            </h3>
+
+            <p class="process-desc">
+              مراجعة الرسومات وBOQ والمواصفات.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              03
+            </span>
+
+            <h3 class="process-title">
+              معاينة الموقع
+            </h3>
+
+            <p class="process-desc">
+              زيارة الموقع عند الحاجة لتقييم الأعمال.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              04
+            </span>
+
+            <h3 class="process-title">
+              عرض السعر
+            </h3>
+
+            <p class="process-desc">
+              إعداد وتقديم عرض السعر المناسب للمشروع.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              05
+            </span>
+
+            <h3 class="process-title">
+              التنفيذ
+            </h3>
+
+            <p class="process-desc">
+              بدء وتنفيذ أعمال التشطيبات المتفق عليها.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              06
+            </span>
+
+            <h3 class="process-title">
+              التسليم
+            </h3>
+
+            <p class="process-desc">
+              استكمال وتسليم الأعمال وفقًا للمتطلبات المتفق عليها.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CTA
+    ========================================================= -->
+
+    <section class="cta">
+
+      <div class="container cta-inner">
+
+        <div>
+
+          <h2 class="cta-title">
+            لديك مشروع في ذهنك؟
+          </h2>
+
+          <p class="cta-desc">
+
+            دعنا نناقش احتياجات مشروعك في التشطيبات
+            ونستكشف كيف يمكن للحمد دعم مشروعك.
+
+          </p>
+
+        </div>
+
+
+        <div class="cta-actions">
+
+          <a
+            href="#contact"
+            class="btn btn-primary"
+          >
+            اطلب عرض سعر
+          </a>
+
+
+          <a
+            href="https://wa.me/201006848409"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary"
+          >
+            تواصل عبر واتساب
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================= -->
+
+    <section
+      id="contact"
+      class="section-padding contact"
+    >
+
+      <div class="container">
+
+        <div class="contact-grid">
+
+
+          <div>
+
+            <span class="section-tag">
+              تواصل معنا
+            </span>
+
+
+            <h2 class="section-title">
+              لنعمل معًا
+            </h2>
+
+
+            <p class="contact-intro">
+
+              لديك مشروع يحتاج إلى خدمات تشطيبات ومقاولات احترافية؟
+              تواصل مع الحمد لمناقشة متطلبات مشروعك.
+
+            </p>
+
+
+            <div class="contact-list">
+
+
+              <div class="contact-item">
+
+                <span class="contact-label">
+                  الهاتف
+                </span>
+
+                <a
+                  href="tel:+201019807126"
+                  class="contact-value"
+                >
+                  01019807126
+                </a>
+
+              </div>
+
+
+              <div class="contact-item">
+
+                <span class="contact-label">
+                  واتساب
+                </span>
+
+                <a
+                  href="https://wa.me/201006848409"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-value"
+                >
+                  +201006848409
+                </a>
+
+              </div>
+
+
+              <div class="contact-item">
+
+                <span class="contact-label">
+                  البريد الإلكتروني
+                </span>
+
+                <a
+                  href="mailto:akhaled7835@gmail.com"
+                  class="contact-value"
+                >
+                  akhaled7835@gmail.com
+                </a>
+
+              </div>
+
+
+              <div class="contact-item">
+
+                <span class="contact-label">
+                  الموقع
+                </span>
+
+                <span class="contact-value">
+                  كفر الدوار، البحيرة، مصر
+                </span>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <!-- =====================================================
+               QUOTE FORM
+          ===================================================== -->
+
+          <form
+            id="quoteForm"
+            class="quote-form"
+          >
+
+            <h3 class="form-title">
+              اطلب عرض سعر
+            </h3>
+
+
+            <div class="form-grid">
+
+
+              <div class="form-group">
+
+                <label for="fullName">
+                  الاسم بالكامل
+                  <span>*</span>
+                </label>
+
+                <input
+                  id="fullName"
+                  class="form-control"
+                  type="text"
+                  placeholder="الاسم بالكامل"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="companyName">
+                  اسم الشركة
+                </label>
+
+                <input
+                  id="companyName"
+                  class="form-control"
+                  type="text"
+                  placeholder="اسم الشركة أو المكتب الهندسي (اختياري)"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="phoneNum">
+                  رقم الهاتف
+                  <span>*</span>
+                </label>
+
+                <input
+                  id="phoneNum"
+                  class="form-control"
+                  type="tel"
+                  placeholder="01XXXXXXXXX"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="emailAddr">
+                  البريد الإلكتروني
+                </label>
+
+                <input
+                  id="emailAddr"
+                  class="form-control"
+                  type="email"
+                  placeholder="name@domain.com"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="projectType">
+                  نوع المشروع
+                  <span>*</span>
+                </label>
+
+                <select
+                  id="projectType"
+                  class="form-control"
+                  required
+                >
+
+                  <option
+                    value=""
+                    selected
+                    disabled
+                  >
+                    اختر نوع المشروع
+                  </option>
+
+                  <option value="Residential">
+                    سكني
+                  </option>
+
+                  <option value="Commercial">
+                    تجاري
+                  </option>
+
+                  <option value="Other">
+                    أخرى
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="projectLocation">
+                  موقع المشروع
+                  <span>*</span>
+                </label>
+
+                <input
+                  id="projectLocation"
+                  class="form-control"
+                  type="text"
+                  placeholder="المدينة / المنطقة"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group full">
+
+                <label for="projectMessage">
+                  تفاصيل المشروع
+                </label>
+
+                <textarea
+                  id="projectMessage"
+                  class="form-control"
+                  placeholder="اكتب نبذة مختصرة عن احتياجات مشروعك في التشطيبات..."
+                ></textarea>
+
+              </div>
+
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn btn-primary form-submit"
+            >
+              إرسال الطلب عبر واتساب
+            </button>
+
+
+            <div
+              id="formNotice"
+              class="form-notice"
+              role="status"
+            >
+
+              <strong>
+                تم تجهيز الطلب!
+              </strong>
+
+              <br>
+
+              تم فتح تفاصيل طلبك في واتساب.
+              يرجى مراجعة البيانات ثم الضغط على إرسال داخل تطبيق واتساب.
+
+            </div>
+
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <div class="footer-brand">
+
+            <img
+              src="assets/images/alhamd-logo.png"
+              alt="ALHAMD | الحمد"
+            >
+
+          </div>
+
+
+          <p class="footer-desc">
+
+            أعمال التشطيبات والمقاولات الداخلية
+            للمشروعات السكنية والتجارية في مختلف أنحاء مصر.
+
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="footer-heading">
+            التنقل
+          </h3>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="#about">
+                من نحن
+              </a>
+            </li>
+
+            <li>
+              <a href="#services">
+                خدماتنا
+              </a>
+            </li>
+
+            <li>
+              <a href="#concepts">
+                التصورات
+              </a>
+            </li>
+
+            <li>
+              <a href="#projects">
+                المشاريع
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="footer-heading">
+            تواصل معنا
+          </h3>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="#contact">
+                اطلب عرض سعر
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/201006848409"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                واتساب
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:akhaled7835@gmail.com">
+                البريد الإلكتروني
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 ALHAMD. جميع الحقوق محفوظة.
+        </span>
+
+        <span>
+          التشطيبات الداخلية والمقاولات
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       CONCEPT MODAL
+  ========================================================= -->
+
+  <div
+    class="modal-overlay"
+    id="conceptModal"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="modalTitle"
+  >
+
+    <div class="modal">
+
+
+      <div class="modal-header">
+
+        <div>
+
+          <span
+            class="modal-number"
+            id="modalNumber"
+          >
+            التصور 01
+          </span>
+
+
+          <h3
+            class="modal-title"
+            id="modalTitle"
+          >
+            فيلا عصرية
+          </h3>
+
+
+          <span
+            class="modal-category"
+            id="modalCategory"
+          >
+            تصور داخلي سكني
+          </span>
+
+        </div>
+
+
+        <button
+          class="modal-close"
+          id="modalCloseBtn"
+          type="button"
+          aria-label="إغلاق"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <div class="modal-body">
+
+        <div
+          class="modal-slider"
+          id="baSlider"
+        >
+
+          <img
+            id="imgAfter"
+            src="assets/concepts/modern-villa-after.jpg"
+            alt="بعد التشطيب"
+          >
+
+
+          <div
+            class="ba-overlay"
+            id="baOverlay"
+          >
+
+            <img
+              id="imgBefore"
+              src="assets/concepts/modern-villa-before.jpg"
+              alt="قبل التشطيب"
+            >
+
+          </div>
+
+
+          <div
+            class="ba-divider"
+            id="baDivider"
+            aria-hidden="true"
+          ></div>
+
+
+          <span class="ba-label ba-label-before">
+            قبل
+          </span>
+
+
+          <span class="ba-label ba-label-after">
+            بعد
+          </span>
+
+        </div>
+
+
+        <p class="modal-description">
+
+          اسحب الخط الفاصل أفقيًا لمقارنة الفراغ قبل التشطيب
+          مع التصور التصميمي بعد التشطيب.
+
+        </p>
+
+      </div>
+
+
+      <div class="modal-footer">
+
+        <button
+          class="modal-nav-btn"
+          id="modalPrevBtn"
+          type="button"
+        >
+          → التصور السابق
+        </button>
+
+
+        <button
+          class="modal-nav-btn"
+          id="modalNextBtn"
+          type="button"
+        >
+          التصور التالي ←
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================= -->
+
+  <script>
+
+    /* =========================================================
+       CONCEPT DATA
+    ========================================================= */
+
+    const conceptsData = [
+
+      {
+        id: '01',
+        title: 'فيلا عصرية',
+        category: 'تصور داخلي سكني',
+        beforeImg: 'assets/concepts/modern-villa-before.jpg',
+        afterImg: 'assets/concepts/modern-villa-after.jpg'
+      },
+
+      {
+        id: '02',
+        title: 'شقة عصرية',
+        category: 'تصور داخلي سكني',
+        beforeImg: 'assets/concepts/contemporary-apartment-before.jpg',
+        afterImg: 'assets/concepts/contemporary-apartment-after.jpg'
+      },
+
+      {
+        id: '03',
+        title: 'مكتب شركة',
+        category: 'تصور داخلي تجاري',
+        beforeImg: 'assets/concepts/corporate-office-before.jpg',
+        afterImg: 'assets/concepts/corporate-office-after.jpg'
+      },
+
+      {
+        id: '04',
+        title: 'استقبال تنفيذي',
+        category: 'تصور داخلي إداري',
+        beforeImg: 'assets/concepts/executive-reception-before.jpg',
+        afterImg: 'assets/concepts/executive-reception-after.jpg'
+      },
+
+      {
+        id: '05',
+        title: 'مطبخ عصري',
+        category: 'تصور داخلي سكني',
+        beforeImg: 'assets/concepts/modern-kitchen-before.jpg',
+        afterImg: 'assets/concepts/modern-kitchen-after.jpg'
+      },
+
+      {
+        id: '06',
+        title: 'مساحة تجارية عصرية',
+        category: 'تصور داخلي تجاري',
+        beforeImg: 'assets/concepts/modern-commercial-before.jpg',
+        afterImg: 'assets/concepts/modern-commercial-after.jpg'
+      }
+
+    ];
+
+
+    /* =========================================================
+       PLACEHOLDER GENERATOR
+    ========================================================= */
+
+    function createCleanPlaceholderSvg(
+      id,
+      title,
+      state
+    ) {
+
+      const isBefore =
+        state === 'BEFORE';
+
+
+      const bgColor =
+        isBefore
+          ? '#E7E5E4'
+          : '#F5EFE6';
+
+
+      const strokeColor =
+        isBefore
+          ? '#A8A29E'
+          : '#8C6A43';
+
+
+      const textSub =
+        isBefore
+          ? 'Existing Geometry'
+          : 'Finishing Concept';
+
+
+      const svg = `
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="800"
+          height="500"
+          viewBox="0 0 800 500"
+        >
+
+          <rect
+            width="800"
+            height="500"
+            fill="${bgColor}"
+          />
+
+          <line
+            x1="100"
+            y1="0"
+            x2="100"
+            y2="500"
+            stroke="${strokeColor}"
+            stroke-opacity="0.15"
+            stroke-width="1"
+          />
+
+          <line
+            x1="700"
+            y1="0"
+            x2="700"
+            y2="500"
+            stroke="${strokeColor}"
+            stroke-opacity="0.15"
+            stroke-width="1"
+          />
+
+          <line
+            x1="0"
+            y1="350"
+            x2="800"
+            y2="350"
+            stroke="${strokeColor}"
+            stroke-opacity="0.2"
+            stroke-width="1"
+          />
+
+          <path
+            d="M 100 350 L 250 150 L 700 350"
+            fill="none"
+            stroke="${strokeColor}"
+            stroke-opacity="0.25"
+            stroke-width="1.5"
+            stroke-dasharray="4 4"
+          />
+
+          <rect
+            x="330"
+            y="200"
+            width="140"
+            height="32"
+            rx="16"
+            fill="${strokeColor}"
+            fill-opacity="0.15"
+          />
+
+          <text
+            x="400"
+            y="221"
+            font-family="sans-serif"
+            font-size="13"
+            font-weight="700"
+            fill="${strokeColor}"
+            text-anchor="middle"
+            letter-spacing="1.5"
+          >
+            ${state}
+          </text>
+
+          <text
+            x="400"
+            y="265"
+            font-family="sans-serif"
+            font-size="20"
+            font-weight="700"
+            fill="#1C1917"
+            text-anchor="middle"
+          >
+            ${id} — ${title}
+          </text>
+
+          <text
+            x="400"
+            y="290"
+            font-family="sans-serif"
+            font-size="14"
+            fill="#57534E"
+            text-anchor="middle"
+          >
+            ${textSub}
+          </text>
+
+        </svg>
+
+      `;
+
+
+      return (
+        'data:image/svg+xml;charset=utf-8,' +
+        encodeURIComponent(svg)
+      );
+
+    }
+
+
+    /* =========================================================
+       MOBILE NAVIGATION
+    ========================================================= */
+
+    const mobileMenuBtn =
+      document.getElementById(
+        'mobileMenuBtn'
+      );
+
+
+    const mobileMenu =
+      document.getElementById(
+        'mobileMenu'
+      );
+
+
+    const mobileNavLinks =
+      document.querySelectorAll(
+        '.mobile-nav-link'
+      );
+
+
+    function toggleMobileMenu() {
+
+      const isActive =
+        mobileMenu.classList.toggle(
+          'active'
+        );
+
+
+      mobileMenu.setAttribute(
+        'aria-hidden',
+        String(!isActive)
+      );
+
+
+      mobileMenuBtn.setAttribute(
+        'aria-expanded',
+        String(isActive)
+      );
+
+    }
+
+
+    mobileMenuBtn.addEventListener(
+      'click',
+      toggleMobileMenu
+    );
+
+
+    mobileNavLinks.forEach(
+      (link) => {
+
+        link.addEventListener(
+          'click',
+          () => {
+
+            if (
+              mobileMenu.classList.contains(
+                'active'
+              )
+            ) {
+
+              toggleMobileMenu();
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+
+    /* =========================================================
+       MODAL
+    ========================================================= */
+
+    let currentConceptIndex = 0;
+
+    let isModalDragging = false;
+
+
+    const modal =
+      document.getElementById(
+        'conceptModal'
+      );
+
+
+    const modalNumber =
+      document.getElementById(
+        'modalNumber'
+      );
+
+
+    const modalTitle =
+      document.getElementById(
+        'modalTitle'
+      );
+
+
+    const modalCategory =
+      document.getElementById(
+        'modalCategory'
+      );
+
+
+    const modalCloseBtn =
+      document.getElementById(
+        'modalCloseBtn'
+      );
+
+
+    const modalPrevBtn =
+      document.getElementById(
+        'modalPrevBtn'
+      );
+
+
+    const modalNextBtn =
+      document.getElementById(
+        'modalNextBtn'
+      );
+
+
+    const imgBefore =
+      document.getElementById(
+        'imgBefore'
+      );
+
+
+    const imgAfter =
+      document.getElementById(
+        'imgAfter'
+      );
+
+
+    const modalSlider =
+      document.getElementById(
+        'baSlider'
+      );
+
+
+    const modalOverlay =
+      document.getElementById(
+        'baOverlay'
+      );
+
+
+    const modalDivider =
+      document.getElementById(
+        'baDivider'
+      );
+
+
+    /* =========================================================
+       LOAD CONCEPT
+    ========================================================= */
+
+    function loadConceptData(index) {
+
+      currentConceptIndex =
+        index;
+
+
+      const data =
+        conceptsData[index];
+
+
+      modalNumber.textContent =
+        `التصور ${data.id}`;
+
+
+      modalTitle.textContent =
+        data.title;
+
+
+      modalCategory.textContent =
+        data.category;
+
+
+      const fallbackBefore =
+        createCleanPlaceholderSvg(
+          data.id,
+          data.title,
+          'BEFORE'
+        );
+
+
+      const fallbackAfter =
+        createCleanPlaceholderSvg(
+          data.id,
+          data.title,
+          'AFTER'
+        );
+
+
+      imgBefore.onerror =
+        function () {
+
+          this.onerror = null;
+
+          this.src =
+            fallbackBefore;
+
+        };
+
+
+      imgAfter.onerror =
+        function () {
+
+          this.onerror = null;
+
+          this.src =
+            fallbackAfter;
+
+        };
+
+
+      imgBefore.src =
+        data.beforeImg;
+
+
+      imgAfter.src =
+        data.afterImg;
+
+
+      setModalSliderPosition(50);
+
+    }
+
+
+    /* =========================================================
+       OPEN MODAL
+    ========================================================= */
+
+    function openModal(index) {
+
+      loadConceptData(index);
+
+
+      modal.classList.add(
+        'active'
+      );
+
+
+      modal.setAttribute(
+        'aria-hidden',
+        'false'
+      );
+
+
+      document.body.classList.add(
+        'modal-open'
+      );
+
+
+      requestAnimationFrame(
+        () => {
+
+          updateModalImageWidth();
+
+          setModalSliderPosition(50);
+
+        }
+      );
+
+    }
+
+
+    /* =========================================================
+       CLOSE MODAL
+    ========================================================= */
+
+    function closeModal() {
+
+      modal.classList.remove(
+        'active'
+      );
+
+
+      modal.setAttribute(
+        'aria-hidden',
+        'true'
+      );
+
+
+      document.body.classList.remove(
+        'modal-open'
+      );
+
+    }
+
+
+    modalCloseBtn.addEventListener(
+      'click',
+      closeModal
+    );
+
+
+    /* =========================================================
+       MODAL PREVIOUS
+    ========================================================= */
+
+    modalPrevBtn.addEventListener(
+      'click',
+      () => {
+
+        const previousIndex =
+          (
+            currentConceptIndex -
+            1 +
+            conceptsData.length
+          ) %
+          conceptsData.length;
+
+
+        openModal(
+          previousIndex
+        );
+
+      }
+    );
+
+
+    /* =========================================================
+       MODAL NEXT
+    ========================================================= */
+
+    modalNextBtn.addEventListener(
+      'click',
+      () => {
+
+        const nextIndex =
+          (
+            currentConceptIndex +
+            1
+          ) %
+          conceptsData.length;
+
+
+        openModal(
+          nextIndex
+        );
+
+      }
+    );
+
+
+    /* =========================================================
+       BACKDROP CLOSE
+    ========================================================= */
+
+    modal.addEventListener(
+      'click',
+      (event) => {
+
+        if (
+          event.target === modal
+        ) {
+
+          closeModal();
+
+        }
+
+      }
+    );
+
+
+    /* =========================================================
+       KEYBOARD
+    ========================================================= */
+
+    window.addEventListener(
+      'keydown',
+      (event) => {
+
+        if (
+          !modal.classList.contains(
+            'active'
+          )
+        ) {
+          return;
+        }
+
+
+        if (
+          event.key === 'Escape'
+        ) {
+
+          closeModal();
+
+          return;
+
+        }
+
+
+        if (
+          event.key === 'ArrowLeft'
+        ) {
+
+          modalPrevBtn.click();
+
+          return;
+
+        }
+
+
+        if (
+          event.key === 'ArrowRight'
+        ) {
+
+          modalNextBtn.click();
+
+        }
+
+      }
+    );
+
+
+    /* =========================================================
+       MODAL SLIDER POSITION
+    ========================================================= */
+
+    function setModalSliderPosition(
+      percentage
+    ) {
+
+      const value =
+        Math.max(
+          0,
+          Math.min(
+            100,
+            Number(percentage)
+          )
+        );
+
+
+      if (modalOverlay) {
+
+        modalOverlay.style.width =
+          `${value}%`;
+
+      }
+
+
+      if (modalDivider) {
+
+        modalDivider.style.left =
+          `${value}%`;
+
+      }
+
+    }
+
+
+    /* =========================================================
+       MODAL IMAGE WIDTH
+    ========================================================= */
+
+    function updateModalImageWidth() {
+
+      if (
+        !modalSlider ||
+        !imgBefore ||
+        !modalOverlay
+      ) {
+
+        return;
+
+      }
+
+
+      const width =
+        modalSlider.getBoundingClientRect()
+          .width;
+
+
+      modalOverlay.style.setProperty(
+        '--container-width',
+        `${width}px`
+      );
+
+
+      imgBefore.style.width =
+        `${width}px`;
+
+    }
+
+
+    /* =========================================================
+       MODAL POINTER CALCULATION
+    ========================================================= */
+
+    function getModalPercentage(
+      clientX
+    ) {
+
+      const rect =
+        modalSlider.getBoundingClientRect();
+
+
+      if (!rect.width) {
+
+        return 50;
+
+      }
+
+
+      const x =
+        clientX -
+        rect.left;
+
+
+      return Math.max(
+        0,
+        Math.min(
+          100,
+          (x / rect.width) * 100
+        )
+      );
+
+    }
+
+
+    /* =========================================================
+       MODAL DRAG
+    ========================================================= */
+
+    function handleModalPointerMove(
+      event
+    ) {
+
+      if (!isModalDragging) {
+
+        return;
+
+      }
+
+
+      const clientX =
+        event.touches &&
+        event.touches.length
+          ? event.touches[0].clientX
+          : event.clientX;
+
+
+      const percentage =
+        getModalPercentage(
+          clientX
+        );
+
+
+      setModalSliderPosition(
+        percentage
+      );
+
+    }
+
+
+    modalSlider.addEventListener(
+      'mousedown',
+      (event) => {
+
+        event.preventDefault();
+
+        isModalDragging = true;
+
+
+        setModalSliderPosition(
+          getModalPercentage(
+            event.clientX
+          )
+        );
+
+      }
+    );
+
+
+    modalSlider.addEventListener(
+      'touchstart',
+      (event) => {
+
+        isModalDragging = true;
+
+
+        setModalSliderPosition(
+          getModalPercentage(
+            event.touches[0].clientX
+          )
+        );
+
+      },
+      {
+        passive: true
+      }
+    );
+
+
+    window.addEventListener(
+      'mousemove',
+      handleModalPointerMove
+    );
+
+
+    window.addEventListener(
+      'touchmove',
+      handleModalPointerMove,
+      {
+        passive: true
+      }
+    );
+
+
+    window.addEventListener(
+      'mouseup',
+      () => {
+
+        isModalDragging = false;
+
+      }
+    );
+
+
+    window.addEventListener(
+      'touchend',
+      () => {
+
+        isModalDragging = false;
+
+      }
+    );
+
+
+    window.addEventListener(
+      'resize',
+      updateModalImageWidth
+    );
+
+
+    /* =========================================================
+       CARD SLIDERS
+    ========================================================= */
+
+    const conceptCards =
+      document.querySelectorAll(
+        '.concept-card'
+      );
+
+
+    conceptCards.forEach(
+      (card, index) => {
+
+        const slider =
+          card.querySelector(
+            '.ba-slider'
+          );
+
+
+        const overlay =
+          card.querySelector(
+            '.ba-overlay'
+          );
+
+
+        const range =
+          card.querySelector(
+            '.ba-range'
+          );
+
+
+        const beforeImage =
+          overlay
+            ? overlay.querySelector(
+                '.concept-img'
+              )
+            : null;
+
+
+        if (
+          !slider ||
+          !overlay ||
+          !range
+        ) {
+
+          return;
+
+        }
+
+
+        function updateCardSlider(
+          value
+        ) {
+
+          const percentage =
+            Math.max(
+              0,
+              Math.min(
+                100,
+                Number(value)
+              )
+            );
+
+
+          overlay.style.width =
+            `${percentage}%`;
+
+
+          if (beforeImage) {
+
+            beforeImage.style.width =
+              `${slider.getBoundingClientRect().width}px`;
+
+          }
+
+        }
+
+
+        /* Range */
+
+        range.addEventListener(
+          'input',
+          (event) => {
+
+            event.stopPropagation();
+
+
+            updateCardSlider(
+              event.target.value
+            );
+
+          }
+        );
+
+
+        range.addEventListener(
+          'click',
+          (event) => {
+
+            event.stopPropagation();
+
+          }
+        );
+
+
+        /* Direct dragging */
+
+        let isCardDragging = false;
+
+
+        function updateCardFromPointer(
+          clientX
+        ) {
+
+          const rect =
+            slider.getBoundingClientRect();
+
+
+          if (!rect.width) {
+
+            return;
+
+          }
+
+
+          const x =
+            clientX -
+            rect.left;
+
+
+          const percentage =
+            Math.max(
+              0,
+              Math.min(
+                100,
+                (x / rect.width) * 100
+              )
+            );
+
+
+          range.value =
+            percentage;
+
+
+          updateCardSlider(
+            percentage
+          );
+
+        }
+
+
+        slider.addEventListener(
+          'mousedown',
+          (event) => {
+
+            if (
+              event.target === range
+            ) {
+
+              return;
+
+            }
+
+
+            isCardDragging = true;
+
+
+            updateCardFromPointer(
+              event.clientX
+            );
+
+          }
+        );
+
+
+        slider.addEventListener(
+          'touchstart',
+          (event) => {
+
+            if (
+              event.target === range
+            ) {
+
+              return;
+
+            }
+
+
+            isCardDragging = true;
+
+
+            updateCardFromPointer(
+              event.touches[0].clientX
+            );
+
+          },
+          {
+            passive: true
+          }
+        );
+
+
+        function handleCardMove(
+          event
+        ) {
+
+          if (!isCardDragging) {
+
+            return;
+
+          }
+
+
+          const clientX =
+            event.touches &&
+            event.touches.length
+              ? event.touches[0].clientX
+              : event.clientX;
+
+
+          updateCardFromPointer(
+            clientX
+          );
+
+        }
+
+
+        window.addEventListener(
+          'mousemove',
+          handleCardMove
+        );
+
+
+        window.addEventListener(
+          'touchmove',
+          handleCardMove,
+          {
+            passive: true
+          }
+        );
+
+
+        window.addEventListener(
+          'mouseup',
+          () => {
+
+            isCardDragging = false;
+
+          }
+        );
+
+
+        window.addEventListener(
+          'touchend',
+          () => {
+
+            isCardDragging = false;
+
+          }
+        );
+
+
+        /* Initial */
+
+        updateCardSlider(
+          range.value || 50
+        );
+
+
+        /* Open modal */
+
+        card.addEventListener(
+          'click',
+          (event) => {
+
+            if (
+              event.target.closest(
+                '.ba-range'
+              )
+            ) {
+
+              return;
+
+            }
+
+
+            openModal(index);
+
+          }
+        );
+
+
+        /* Resize */
+
+        window.addEventListener(
+          'resize',
+          () => {
+
+            updateCardSlider(
+              range.value || 50
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+    /* =========================================================
+       QUOTE FORM → WHATSAPP
+    ========================================================= */
+
+    const quoteForm =
+      document.getElementById(
+        'quoteForm'
+      );
+
+
+    const formNotice =
+      document.getElementById(
+        'formNotice'
+      );
+
+
+    quoteForm.addEventListener(
+      'submit',
+      function (event) {
+
+        event.preventDefault();
+
+
+        const fullName =
+          document
+            .getElementById(
+              'fullName'
+            )
+            .value
+            .trim();
+
+
+        const companyName =
+          document
+            .getElementById(
+              'companyName'
+            )
+            .value
+            .trim() ||
+          'غير محدد';
+
+
+        const phoneNum =
+          document
+            .getElementById(
+              'phoneNum'
+            )
+            .value
+            .trim();
+
+
+        const emailAddr =
+          document
+            .getElementById(
+              'emailAddr'
+            )
+            .value
+            .trim() ||
+          'غير محدد';
+
+
+        const projectType =
+          document
+            .getElementById(
+              'projectType'
+            )
+            .value;
+
+
+        const projectLocation =
+          document
+            .getElementById(
+              'projectLocation'
+            )
+            .value
+            .trim();
+
+
+        const message =
+          document
+            .getElementById(
+              'projectMessage'
+            )
+            .value
+            .trim() ||
+          'غير محدد';
+
+
+        const projectTypeArabic =
+          projectType === 'Residential'
+            ? 'سكني'
+            : projectType === 'Commercial'
+              ? 'تجاري'
+              : 'أخرى';
+
+
+        const formattedText =
+`مرحبًا ALHAMD، أرغب في طلب عرض سعر.
+
+الاسم بالكامل: ${fullName}
+اسم الشركة: ${companyName}
+رقم الهاتف: ${phoneNum}
+البريد الإلكتروني: ${emailAddr}
+نوع المشروع: ${projectTypeArabic}
+موقع المشروع: ${projectLocation}
+
+تفاصيل المشروع:
+${message}
+
+شكرًا لكم.`;
+
+
+        const whatsappUrl =
+          `https://wa.me/201006848409?text=${encodeURIComponent(formattedText)}`;
+
+
+        window.open(
+          whatsappUrl,
+          '_blank',
+          'noopener,noreferrer'
+        );
+
+
+        formNotice.style.display =
+          'block';
+
+      }
+    );
+
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,4696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ALHAMD | Interior Finishing & Contracting</title>
+
+  <meta
+    name="description"
+    content="ALHAMD provides professional interior finishing and contracting solutions for residential and commercial projects in Egypt."
+  >
+
+  <meta
+    name="keywords"
+    content="Finishing, Contracting, Interior Design, Gypsum, Painting, Tile, Electrical, Plumbing, Egypt, Kafr El Dawar"
+  >
+
+  <meta name="theme-color" content="#FAFAF9">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ALHAMD | Interior Finishing & Contracting">
+  <meta
+    property="og:description"
+    content="Reliable finishing and contracting solutions focused on quality, coordination, and professional execution."
+  >
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "ALHAMD | الحمد",
+    "description": "Professional interior finishing and contracting solutions for residential and commercial projects in Egypt.",
+    "telephone": "+201019807126",
+    "email": "akhaled7835@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kafr El Dawar",
+      "addressRegion": "Beheira",
+      "addressCountry": "EG"
+    },
+    "areaServed": "Egypt"
+  }
+  </script>
+
+  <style>
+    /* =========================================================
+       DESIGN SYSTEM
+    ========================================================= */
+
+    :root {
+      --bg-primary: #FAFAF9;
+      --bg-surface: #FFFFFF;
+      --bg-subtle: #F3F1EE;
+      --border-color: #E5E2DC;
+
+      --text-main: #1C1917;
+      --text-muted: #57534E;
+      --text-light: #78716C;
+
+      --accent-bronze: #8C6A43;
+      --accent-hover: #735432;
+      --accent-soft: #F5EFE6;
+
+      --font-en: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-ar: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --shadow-sm:
+        0 1px 2px 0 rgba(28, 25, 23, 0.05);
+
+      --shadow-md:
+        0 4px 6px -1px rgba(28, 25, 23, 0.06),
+        0 2px 4px -1px rgba(28, 25, 23, 0.03);
+
+      --shadow-lg:
+        0 10px 15px -3px rgba(28, 25, 23, 0.08),
+        0 4px 6px -2px rgba(28, 25, 23, 0.03);
+
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+
+    /* =========================================================
+       GLOBAL RESET
+    ========================================================= */
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-en);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .ar-text {
+      font-family: var(--font-ar);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+
+    /* =========================================================
+       UTILITY
+    ========================================================= */
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-padding {
+      padding: 5rem 0;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+      max-width: 700px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-bronze);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+    }
+
+    .section-desc {
+      margin-top: 1rem;
+      font-size: 1.0625rem;
+      color: var(--text-muted);
+    }
+
+
+    /* =========================================================
+       BUTTONS
+    ========================================================= */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.75rem;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-bronze);
+      color: #FFFFFF;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--text-main);
+      border-color: var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--bg-subtle);
+      border-color: var(--text-muted);
+    }
+
+
+    /* =========================================================
+       NAVBAR
+    ========================================================= */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(250, 250, 249, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+      height: 80px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+
+    .brand .ar-brand {
+      font-family: var(--font-ar);
+      color: var(--accent-bronze);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      color: var(--accent-bronze);
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: var(--text-main);
+    }
+
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
+
+    .mobile-menu {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--bg-surface);
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1.5rem;
+      gap: 1.5rem;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .mobile-menu.active {
+      transform: translateX(0);
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .mobile-nav-link {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      padding: 6rem 0 5rem;
+      background-color: var(--bg-primary);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
+      color: var(--text-main);
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .hero-line {
+      font-size: 0.9375rem;
+      color: var(--text-light);
+      margin-bottom: 2.25rem;
+      padding-left: 0.875rem;
+      border-left: 2px solid var(--accent-bronze);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--accent-bronze);
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .hero-stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .hero-stat-val {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .hero-stat-lbl {
+      font-size: 0.8125rem;
+      color: var(--text-light);
+    }
+
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .about-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-content {
+      max-width: 800px;
+    }
+
+    .about-text {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .service-card:hover {
+      border-color: var(--accent-bronze);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background-color: var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-bronze);
+    }
+
+    .service-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .service-desc {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+
+    /* =========================================================
+       CONCEPTS
+    ========================================================= */
+
+    .disclaimer-box {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent-bronze);
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 2.5rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .concepts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+
+    .concept-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .concept-card:hover {
+      border-color: var(--accent-bronze);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .concept-thumb {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background-color: var(--bg-subtle);
+      overflow: hidden;
+    }
+
+    /*
+      Important:
+      Do NOT scale the images on hover.
+      Before/After images must remain perfectly aligned.
+    */
+    .concept-card:hover .concept-img {
+      transform: none;
+    }
+
+
+    /* =========================================================
+       CARD BEFORE / AFTER SLIDER
+    ========================================================= */
+
+    .ba-slider {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      cursor: ew-resize;
+      touch-action: none;
+      user-select: none;
+    }
+
+    .ba-slider > .concept-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      pointer-events: none;
+      transition: none;
+    }
+
+    .ba-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 2;
+      border-right: 2px solid #FFFFFF;
+      box-sizing: border-box;
+    }
+
+    .ba-overlay .concept-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: none;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+      transition: none;
+    }
+
+    .ba-range {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      cursor: ew-resize;
+      z-index: 10;
+    }
+
+    .badge-ba {
+      position: absolute;
+      top: 1rem;
+      z-index: 20;
+      pointer-events: none;
+      background: rgba(28, 25, 23, 0.85);
+      color: #FFFFFF;
+      backdrop-filter: blur(4px);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.625rem;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .before-label {
+      left: 1rem;
+      right: auto;
+    }
+
+    .after-label {
+      right: 1rem;
+      left: auto;
+    }
+
+    .concept-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .concept-num {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--accent-bronze);
+      letter-spacing: 0.05em;
+    }
+
+    .concept-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .concept-cat {
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+
+
+    /* =========================================================
+       REAL PROJECTS
+    ========================================================= */
+
+    .empty-state {
+      background-color: var(--bg-surface);
+      border: 2px dashed var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 4rem 2rem;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .empty-state-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1.5rem;
+      color: var(--text-light);
+      background: var(--bg-subtle);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .empty-state-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    .empty-state-desc {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+
+    /* =========================================================
+       WHY ALHAMD
+    ========================================================= */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .why-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .why-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .why-desc {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+
+    /* =========================================================
+       PROCESS
+    ========================================================= */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .process-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      position: relative;
+    }
+
+    .process-num {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-bronze);
+      margin-bottom: 0.5rem;
+      font-family: monospace;
+    }
+
+    .process-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .process-desc {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+
+    /* =========================================================
+       CTA
+    ========================================================= */
+
+    .cta-banner {
+      background-color: var(--text-main);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 4rem 2rem;
+      text-align: center;
+      margin: 2rem auto;
+    }
+
+    .cta-banner .section-title {
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+    }
+
+    .cta-banner .section-desc {
+      color: #A8A29E;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-cta-whatsapp {
+      background-color: #25D366;
+      color: #FFFFFF;
+    }
+
+    .btn-cta-whatsapp:hover {
+      background-color: #1EBE5D;
+    }
+
+
+    /* =========================================================
+       CONTACT / FORM
+    ========================================================= */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .contact-info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background-color: var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-bronze);
+      flex-shrink: 0;
+    }
+
+    .contact-lbl {
+      font-size: 0.8125rem;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .contact-val {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-top: 0.125rem;
+    }
+
+    .contact-val a:hover {
+      color: var(--accent-bronze);
+    }
+
+    .quote-form-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 0.375rem;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      transition: var(--transition);
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--accent-bronze);
+      background-color: var(--bg-surface);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .form-notice {
+      display: none;
+      background-color: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      color: #065F46;
+      padding: 1rem;
+      border-radius: var(--radius-sm);
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    .footer {
+      background-color: var(--bg-subtle);
+      border-top: 1px solid var(--border-color);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand-desc {
+      margin-top: 1rem;
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+      max-width: 380px;
+    }
+
+    .footer-col-title {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-link {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .footer-link:hover {
+      color: var(--accent-bronze);
+    }
+
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.875rem;
+      color: var(--text-light);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+
+    /* =========================================================
+       MODAL / LIGHTBOX
+    ========================================================= */
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(28, 25, 23, 0.85);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 1000;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-container {
+      background-color: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 1000px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+      display: flex;
+      flex-direction: column;
+
+      max-height: 92vh;
+      position: relative;
+    }
+
+    .modal-header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      background-color: var(--bg-primary);
+    }
+
+    .modal-title-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .modal-subtitle {
+      font-size: 0.8125rem;
+      color: var(--text-light);
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: var(--text-muted);
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: var(--transition);
+    }
+
+    .modal-close:hover {
+      background-color: var(--bg-subtle);
+      color: var(--text-main);
+    }
+
+    .modal-body {
+      padding: 1.5rem;
+      overflow-y: auto;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+
+    /* =========================================================
+       MODAL BEFORE / AFTER
+    ========================================================= */
+
+    .ba-slider-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      user-select: none;
+      background-color: var(--bg-subtle);
+      cursor: ew-resize;
+      touch-action: none;
+    }
+
+    .ba-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .ba-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+
+      width: 50%;
+
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .ba-overlay .ba-image {
+      width: var(--container-width, 1000px);
+      max-width: none;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ba-divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+
+      width: 2px;
+
+      background-color: #FFFFFF;
+      z-index: 3;
+
+      cursor: ew-resize;
+
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .ba-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 40px;
+      height: 40px;
+
+      background-color: #FFFFFF;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+      color: var(--text-main);
+    }
+
+    .ba-label {
+      position: absolute;
+      bottom: 1rem;
+
+      padding: 0.35rem 0.75rem;
+
+      background: rgba(28, 25, 23, 0.75);
+      color: #FFFFFF;
+
+      font-size: 0.75rem;
+      font-weight: 600;
+
+      letter-spacing: 0.05em;
+
+      border-radius: var(--radius-sm);
+
+      backdrop-filter: blur(4px);
+
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    .ba-label-before {
+      left: 1rem;
+    }
+
+    .ba-label-after {
+      right: 1rem;
+    }
+
+    .modal-footer {
+      padding: 1rem 1.5rem;
+
+      border-top: 1px solid var(--border-color);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      background-color: var(--bg-primary);
+    }
+
+    .modal-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      font-size: 0.875rem;
+      font-weight: 600;
+
+      color: var(--text-muted);
+
+      cursor: pointer;
+
+      background: none;
+      border: none;
+
+      padding: 0.5rem 0.75rem;
+
+      border-radius: var(--radius-sm);
+
+      transition: var(--transition);
+    }
+
+    .modal-nav-btn:hover {
+      color: var(--text-main);
+      background-color: var(--bg-subtle);
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 900px) {
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: block;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .hero-title {
+        font-size: 2.25rem;
+      }
+
+      .hero {
+        padding: 3.5rem 0;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+
+      .section-padding {
+        padding: 3.5rem 0;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .about-card {
+        padding: 2rem;
+      }
+
+      .concepts-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    @media (max-width: 600px) {
+
+      .ba-slider-container {
+        aspect-ratio: 4 / 3;
+      }
+
+      .modal-body {
+        padding: 1rem;
+      }
+
+      .modal-footer {
+        padding: 0.75rem 1rem;
+      }
+
+      .modal-nav-btn {
+        font-size: 0.75rem;
+      }
+
+      .quote-form-card {
+        padding: 1.5rem;
+      }
+
+      .hero-stat-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================= -->
+
+  <header class="navbar">
+    <div class="container navbar-container">
+
+      <a href="#" class="brand" aria-label="ALHAMD Home">
+        ALHAMD <span class="ar-brand">| الحمد</span>
+      </a>
+
+      <nav aria-label="Desktop Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+
+          <li>
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#concepts" class="nav-link">Concepts</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+     <div class="nav-cta">
+
+  <div class="language-switcher">
+
+    <a
+      href="index.html"
+      class="lang-link active"
+      aria-current="page"
+    >
+      English
+    </a>
+
+    <span>|</span>
+
+    <a
+      href="ar.html"
+      class="lang-link"
+    >
+      العربية
+    </a>
+
+  </div>
+
+  <a
+    href="#contact"
+    class="btn btn-primary"
+  >
+    Request a Quote
+  </a>
+
+</div>
+
+      <button
+        class="mobile-toggle"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="Toggle Mobile Navigation"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- =========================================================
+       MOBILE NAVIGATION
+  ========================================================= -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-hidden="true"
+  >
+    <ul class="mobile-nav-links">
+
+      <li>
+        <a href="#about" class="mobile-nav-link">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="#services" class="mobile-nav-link">
+          Services
+        </a>
+      </li>
+
+      <li>
+        <a href="#concepts" class="mobile-nav-link">
+          Concepts
+        </a>
+      </li>
+
+      <li>
+        <a href="#projects" class="mobile-nav-link">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact" class="mobile-nav-link">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+    <div style="margin-top: auto;">
+      <a
+        href="#contact"
+        class="btn btn-primary"
+        style="width: 100%;"
+      >
+        Request a Quote
+      </a>
+    </div>
+  </div>
+
+
+  <main>
+
+    <!-- =========================================================
+         HERO
+    ========================================================= -->
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <h1 class="hero-title">
+            Professional Finishing Solutions for Residential & Commercial Projects
+          </h1>
+
+          <p class="hero-subtitle">
+            Reliable finishing and contracting solutions focused on quality, coordination, and professional execution.
+          </p>
+
+          <p class="hero-line">
+            Working with engineering offices, contractors and project owners across Egypt.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#contact" class="btn btn-primary">
+              Request a Quote
+            </a>
+
+            <a href="#services" class="btn btn-secondary">
+              Explore Services
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <span class="section-tag">
+            Engineering Focus
+          </span>
+
+          <h2
+            style="
+              font-size: 1.25rem;
+              font-weight: 700;
+              margin-top: 0.25rem;
+              color: var(--text-main);
+            "
+          >
+            Contracting & Technical Coordination
+          </h2>
+
+          <p
+            style="
+              font-size: 0.9375rem;
+              color: var(--text-muted);
+              margin-top: 0.75rem;
+              line-height: 1.5;
+            "
+          >
+            We bridge the gap between architectural vision and physical execution with strict standards and clear communication.
+          </p>
+
+          <div class="hero-stat-grid">
+
+            <div>
+              <div class="hero-stat-val">
+                Specification Focus
+              </div>
+
+              <div class="hero-stat-lbl">
+                Working according to agreed drawings, specifications and project requirements.
+              </div>
+            </div>
+
+            <div>
+              <div class="hero-stat-val">
+                Structured
+              </div>
+
+              <div class="hero-stat-lbl">
+                Engineering Oversight
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================= -->
+
+    <section id="about" class="section-padding">
+
+      <div class="container">
+
+        <div class="about-card">
+
+          <div
+            class="section-header"
+            style="margin-bottom: 1.5rem;"
+          >
+
+            <span class="section-tag">
+              About ALHAMD
+            </span>
+
+            <h2 class="section-title">
+              A finishing and contracting partner for real projects
+            </h2>
+
+          </div>
+
+          <div class="about-content">
+
+            <p class="about-text">
+              ALHAMD is a finishing and contracting company specializing in interior finishing works for residential and commercial projects.
+            </p>
+
+            <p
+              class="about-text"
+              style="margin-bottom: 0;"
+            >
+              We work with engineering offices, contractors, and project owners to deliver reliable finishing solutions with a focus on quality, coordination, and timely execution.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SERVICES
+    ========================================================= -->
+
+    <section
+      id="services"
+      class="section-padding"
+      style="background-color: var(--bg-subtle);"
+    >
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            Our Services
+          </span>
+
+          <h2 class="section-title">
+            Complete finishing solutions tailored to project requirements
+          </h2>
+
+        </div>
+
+
+        <div class="services-grid">
+
+          <!-- 1 -->
+          <article class="service-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M3 3h18v18H3z"></path>
+                <path d="M3 9h18"></path>
+                <path d="M3 15h18"></path>
+              </svg>
+            </div>
+
+            <h3 class="service-title">
+              Gypsum & Ceilings
+            </h3>
+
+            <p class="service-desc">
+              Gypsum board, suspended ceilings and decorative ceiling works.
+            </p>
+
+          </article>
+
+
+          <!-- 2 -->
+          <article class="service-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2v6"></path>
+                <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-7.5c-.5 3.5-2 5.9-4 7.5S5 13 5 15a7 7 0 0 0 7 7z"></path>
+              </svg>
+            </div>
+
+            <h3 class="service-title">
+              Painting Works
+            </h3>
+
+            <p class="service-desc">
+              Interior and exterior painting and finishing works.
+            </p>
+
+          </article>
+
+
+          <!-- 3 -->
+          <article class="service-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <rect x="3" y="3" width="8" height="8" rx="1"></rect>
+                <rect x="13" y="3" width="8" height="8" rx="1"></rect>
+                <rect x="3" y="13" width="8" height="8" rx="1"></rect>
+                <rect x="13" y="13" width="8" height="8" rx="1"></rect>
+              </svg>
+            </div>
+
+            <h3 class="service-title">
+              Flooring & Tiles
+            </h3>
+
+            <p class="service-desc">
+              Ceramic, porcelain, marble and flooring installation works.
+            </p>
+
+          </article>
+
+
+          <!-- 4 -->
+          <article class="service-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+
+            <h3 class="service-title">
+              Electrical Works
+            </h3>
+
+            <p class="service-desc">
+              Electrical installations and finishing works.
+            </p>
+
+          </article>
+
+
+          <!-- 5 -->
+          <article class="service-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-7.5c-.5 3.5-2 5.9-4 7.5S5 13 5 15a7 7 0 0 0 7 7z"></path>
+              </svg>
+            </div>
+
+            <h3 class="service-title">
+              Plumbing Works
+            </h3>
+
+            <p class="service-desc">
+              Plumbing installations and sanitary works.
+            </p>
+
+          </article>
+
+
+          <!-- 6 -->
+          <article class="service-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0l2 4H2l2-4"></path>
+              </svg>
+            </div>
+
+            <h3 class="service-title">
+              Carpentry & Woodwork
+            </h3>
+
+            <p class="service-desc">
+              Doors, kitchens, wardrobes and custom woodwork.
+            </p>
+
+          </article>
+
+
+          <!-- 7 -->
+          <article
+            class="service-card"
+            style="grid-column: 1 / -1;"
+          >
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M3 21h18"></path>
+                <path d="M5 21V7l8-4v18"></path>
+                <path d="M19 21V11l-6-3"></path>
+              </svg>
+            </div>
+
+            <h3 class="service-title">
+              Complete Interior Finishing
+            </h3>
+
+            <p class="service-desc">
+              Integrated finishing works for projects requiring multiple trades.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONCEPTS
+    ========================================================= -->
+
+    <section
+      id="concepts"
+      class="section-padding"
+    >
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            Design Concepts
+          </span>
+
+          <h2 class="section-title">
+            A conceptual portfolio of ALHAMD's finishing vision
+          </h2>
+
+          <p class="section-desc">
+            Explore interactive before-and-after visualizations showcasing ALHAMD's architectural finishing vision across residential and commercial spaces.
+          </p>
+
+        </div>
+
+
+        <div
+          class="disclaimer-box"
+          role="note"
+        >
+          <strong>Disclaimer:</strong>
+          Conceptual before-and-after visualizations created to showcase ALHAMD's finishing vision and capabilities. These images do not represent completed ALHAMD projects.
+        </div>
+
+
+        <div
+          class="concepts-grid"
+          id="conceptsGrid"
+        >
+
+          <!-- ===================================================
+               CONCEPT 01
+          ==================================================== -->
+
+          <article
+            class="concept-card"
+            data-concept="modern-villa"
+          >
+
+            <div class="concept-thumb ba-slider">
+
+              <img
+                src="assets/concepts/modern-villa-after.jpg"
+                alt="Modern Villa concept visualization"
+                class="concept-img"
+              >
+
+              <div class="ba-overlay">
+
+                <img
+                  src="assets/concepts/modern-villa-before.jpg"
+                  alt="Modern Villa existing-space visualization"
+                  class="concept-img"
+                >
+
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="ba-range"
+                aria-label="Compare Before and After Modern Villa"
+              >
+
+              <span class="badge-ba before-label">
+                BEFORE
+              </span>
+
+              <span class="badge-ba after-label">
+                AFTER
+              </span>
+
+            </div>
+
+
+            <div class="concept-body">
+
+              <span class="concept-num">
+                01
+              </span>
+
+              <h3 class="concept-title">
+                Modern Villa
+              </h3>
+
+              <p class="concept-cat">
+                Residential Interior Concept
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- ===================================================
+               CONCEPT 02
+          ==================================================== -->
+
+          <article
+            class="concept-card"
+            data-concept="contemporary-apartment"
+          >
+
+            <div class="concept-thumb ba-slider">
+
+              <img
+                src="assets/concepts/contemporary-apartment-after.jpg"
+                alt="Contemporary Apartment concept visualization"
+                class="concept-img"
+              >
+
+              <div class="ba-overlay">
+
+                <img
+                  src="assets/concepts/contemporary-apartment-before.jpg"
+                  alt="Contemporary Apartment existing-space visualization"
+                  class="concept-img"
+                >
+
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="ba-range"
+                aria-label="Compare Before and After Contemporary Apartment"
+              >
+
+              <span class="badge-ba before-label">
+                BEFORE
+              </span>
+
+              <span class="badge-ba after-label">
+                AFTER
+              </span>
+
+            </div>
+
+
+            <div class="concept-body">
+
+              <span class="concept-num">
+                02
+              </span>
+
+              <h3 class="concept-title">
+                Contemporary Apartment
+              </h3>
+
+              <p class="concept-cat">
+                Residential Interior Concept
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- ===================================================
+               CONCEPT 03
+          ==================================================== -->
+
+          <article
+            class="concept-card"
+            data-concept="corporate-office"
+          >
+
+            <div class="concept-thumb ba-slider">
+
+              <img
+                src="assets/concepts/corporate-office-after.jpg"
+                alt="Corporate Office concept visualization"
+                class="concept-img"
+              >
+
+              <div class="ba-overlay">
+
+                <img
+                  src="assets/concepts/corporate-office-before.jpg"
+                  alt="Corporate Office existing-space visualization"
+                  class="concept-img"
+                >
+
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="ba-range"
+                aria-label="Compare Before and After Corporate Office"
+              >
+
+              <span class="badge-ba before-label">
+                BEFORE
+              </span>
+
+              <span class="badge-ba after-label">
+                AFTER
+              </span>
+
+            </div>
+
+
+            <div class="concept-body">
+
+              <span class="concept-num">
+                03
+              </span>
+
+              <h3 class="concept-title">
+                Corporate Office
+              </h3>
+
+              <p class="concept-cat">
+                Commercial Interior Concept
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- ===================================================
+               CONCEPT 04
+          ==================================================== -->
+
+          <article
+            class="concept-card"
+            data-concept="executive-reception"
+          >
+
+            <div class="concept-thumb ba-slider">
+
+              <img
+                src="assets/concepts/executive-reception-after.jpg"
+                alt="Executive Reception concept visualization"
+                class="concept-img"
+              >
+
+              <div class="ba-overlay">
+
+                <img
+                  src="assets/concepts/executive-reception-before.jpg"
+                  alt="Executive Reception existing-space visualization"
+                  class="concept-img"
+                >
+
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="ba-range"
+                aria-label="Compare Before and After Executive Reception"
+              >
+
+              <span class="badge-ba before-label">
+                BEFORE
+              </span>
+
+              <span class="badge-ba after-label">
+                AFTER
+              </span>
+
+            </div>
+
+
+            <div class="concept-body">
+
+              <span class="concept-num">
+                04
+              </span>
+
+              <h3 class="concept-title">
+                Executive Reception
+              </h3>
+
+              <p class="concept-cat">
+                Corporate Interior Concept
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- ===================================================
+               CONCEPT 05
+          ==================================================== -->
+
+          <article
+            class="concept-card"
+            data-concept="modern-kitchen"
+          >
+
+            <div class="concept-thumb ba-slider">
+
+              <img
+                src="assets/concepts/modern-kitchen-after.jpg"
+                alt="Modern Kitchen concept visualization"
+                class="concept-img"
+              >
+
+              <div class="ba-overlay">
+
+                <img
+                  src="assets/concepts/modern-kitchen-before.jpg"
+                  alt="Modern Kitchen existing-space visualization"
+                  class="concept-img"
+                >
+
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="ba-range"
+                aria-label="Compare Before and After Modern Kitchen"
+              >
+
+              <span class="badge-ba before-label">
+                BEFORE
+              </span>
+
+              <span class="badge-ba after-label">
+                AFTER
+              </span>
+
+            </div>
+
+
+            <div class="concept-body">
+
+              <span class="concept-num">
+                05
+              </span>
+
+              <h3 class="concept-title">
+                Modern Kitchen
+              </h3>
+
+              <p class="concept-cat">
+                Residential Interior Concept
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- ===================================================
+               CONCEPT 06
+          ==================================================== -->
+
+          <article
+            class="concept-card"
+            data-concept="modern-commercial"
+          >
+
+            <div class="concept-thumb ba-slider">
+
+              <img
+                src="assets/concepts/modern-commercial-after.jpg"
+                alt="Modern Commercial Space concept visualization"
+                class="concept-img"
+              >
+
+              <div class="ba-overlay">
+
+                <img
+                  src="assets/concepts/modern-commercial-before.jpg"
+                  alt="Modern Commercial Space existing-space visualization"
+                  class="concept-img"
+                >
+
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="ba-range"
+                aria-label="Compare Before and After Modern Commercial Space"
+              >
+
+              <span class="badge-ba before-label">
+                BEFORE
+              </span>
+
+              <span class="badge-ba after-label">
+                AFTER
+              </span>
+
+            </div>
+
+
+            <div class="concept-body">
+
+              <span class="concept-num">
+                06
+              </span>
+
+              <h3 class="concept-title">
+                Modern Commercial Space
+              </h3>
+
+              <p class="concept-cat">
+                Commercial Interior Concept
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         REAL PROJECTS
+    ========================================================= -->
+
+    <section
+      id="projects"
+      class="section-padding"
+      style="background-color: var(--bg-subtle);"
+    >
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            Real Projects
+          </span>
+
+          <h2 class="section-title">
+            Our completed projects
+          </h2>
+
+          <p class="section-desc">
+            This section will showcase actual ALHAMD projects as completed work becomes available.
+          </p>
+
+        </div>
+
+
+        <div class="empty-state">
+
+          <div
+            class="empty-state-icon"
+            aria-hidden="true"
+          >
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="2"
+              ></rect>
+
+              <circle
+                cx="8.5"
+                cy="8.5"
+                r="1.5"
+              ></circle>
+
+              <path d="M21 15l-5-5L5 21"></path>
+            </svg>
+          </div>
+
+
+          <h3 class="empty-state-title">
+            Project portfolio coming soon
+          </h3>
+
+          <p class="empty-state-desc">
+            Real completed ALHAMD projects will be added here as project documentation and photography become available.
+          </p>
+
+          <a
+            href="#contact"
+            class="btn btn-secondary"
+          >
+            Discuss a Project
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         WHY ALHAMD
+    ========================================================= -->
+
+    <section class="section-padding">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            Why ALHAMD
+          </span>
+
+          <h2 class="section-title">
+            What guides how we execute
+          </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+          <!-- 1 -->
+          <div class="why-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+
+            <h3 class="why-title">
+              Engineering Supervision
+            </h3>
+
+            <p class="why-desc">
+              Professional coordination and engineering oversight throughout execution.
+            </p>
+
+          </div>
+
+
+          <!-- 2 -->
+          <div class="why-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+
+            <h3 class="why-title">
+              Quality Focus
+            </h3>
+
+            <p class="why-desc">
+              Attention to materials, workmanship and finishing details.
+            </p>
+
+          </div>
+
+
+          <!-- 3 -->
+          <div class="why-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+
+            <h3 class="why-title">
+              Clear Communication
+            </h3>
+
+            <p class="why-desc">
+              Clear coordination with clients, engineering offices and project teams.
+            </p>
+
+          </div>
+
+
+          <!-- 4 -->
+          <div class="why-card">
+
+            <div
+              class="service-icon"
+              aria-hidden="true"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                ></circle>
+
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+
+            <h3 class="why-title">
+              Commitment
+            </h3>
+
+            <p class="why-desc">
+              Commitment to agreed specifications, schedules and project requirements.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         PROCESS
+    ========================================================= -->
+
+    <section
+      class="section-padding"
+      style="background-color: var(--bg-subtle);"
+    >
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+            Our Process
+          </span>
+
+          <h2 class="section-title">
+            How a project moves from first contact to handover
+          </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-card">
+            <div class="process-num">01</div>
+
+            <h3 class="process-title">
+              Contact
+            </h3>
+
+            <p class="process-desc">
+              Discuss the project and requirements.
+            </p>
+          </div>
+
+
+          <div class="process-card">
+            <div class="process-num">02</div>
+
+            <h3 class="process-title">
+              Project Review
+            </h3>
+
+            <p class="process-desc">
+              Review drawings, BOQ and specifications.
+            </p>
+          </div>
+
+
+          <div class="process-card">
+            <div class="process-num">03</div>
+
+            <h3 class="process-title">
+              Site Visit
+            </h3>
+
+            <p class="process-desc">
+              Visit the site when required.
+            </p>
+          </div>
+
+
+          <div class="process-card">
+            <div class="process-num">04</div>
+
+            <h3 class="process-title">
+              Quotation
+            </h3>
+
+            <p class="process-desc">
+              Prepare and submit the quotation.
+            </p>
+          </div>
+
+
+          <div class="process-card">
+            <div class="process-num">05</div>
+
+            <h3 class="process-title">
+              Execution
+            </h3>
+
+            <p class="process-desc">
+              Begin and execute the agreed finishing works.
+            </p>
+          </div>
+
+
+          <div class="process-card">
+            <div class="process-num">06</div>
+
+            <h3 class="process-title">
+              Handover
+            </h3>
+
+            <p class="process-desc">
+              Complete and hand over the works according to agreed requirements.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CTA
+    ========================================================= -->
+
+    <section class="container">
+
+      <div class="cta-banner">
+
+        <h2 class="section-title">
+          Have a Project in Mind?
+        </h2>
+
+        <p class="section-desc">
+          Let's discuss your finishing requirements and explore how ALHAMD can support your project.
+        </p>
+
+        <div class="cta-actions">
+
+          <a
+            href="#contact"
+            class="btn btn-primary"
+          >
+            Request a Quote
+          </a>
+
+          <a
+            href="https://wa.me/201006848409"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-cta-whatsapp"
+          >
+            WhatsApp Us
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================= -->
+
+    <section
+      id="contact"
+      class="section-padding"
+    >
+
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <!-- CONTACT INFO -->
+          <div>
+
+            <div
+              class="section-header"
+              style="margin-bottom: 1.5rem;"
+            >
+
+              <span class="section-tag">
+                Contact
+              </span>
+
+              <h2 class="section-title">
+                Let's Work Together
+              </h2>
+
+              <p class="section-desc">
+                Have a project that needs professional finishing and contracting services? Contact ALHAMD to discuss your requirements.
+              </p>
+
+            </div>
+
+
+            <ul class="contact-info-list">
+
+              <!-- Phone -->
+              <li class="contact-item">
+
+                <div
+                  class="contact-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+
+                <div>
+
+                  <div class="contact-lbl">
+                    Phone
+                  </div>
+
+                  <div class="contact-val">
+                    <a href="tel:+201019807126">
+                      01019807126
+                    </a>
+                  </div>
+
+                </div>
+
+              </li>
+
+
+              <!-- WhatsApp -->
+              <li class="contact-item">
+
+                <div
+                  class="contact-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+
+                <div>
+
+                  <div class="contact-lbl">
+                    WhatsApp
+                  </div>
+
+                  <div class="contact-val">
+                    <a
+                      href="https://wa.me/201006848409"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      +201006848409
+                    </a>
+                  </div>
+
+                </div>
+
+              </li>
+
+
+              <!-- Email -->
+              <li class="contact-item">
+
+                <div
+                  class="contact-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+
+                <div>
+
+                  <div class="contact-lbl">
+                    Email
+                  </div>
+
+                  <div class="contact-val">
+                    <a href="mailto:akhaled7835@gmail.com">
+                      akhaled7835@gmail.com
+                    </a>
+                  </div>
+
+                </div>
+
+              </li>
+
+
+              <!-- Location -->
+              <li class="contact-item">
+
+                <div
+                  class="contact-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle
+                      cx="12"
+                      cy="10"
+                      r="3"
+                    ></circle>
+                  </svg>
+                </div>
+
+                <div>
+
+                  <div class="contact-lbl">
+                    Location
+                  </div>
+
+                  <div class="contact-val">
+                    Kafr El Dawar, Beheira, Egypt
+                  </div>
+
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!-- QUOTE FORM -->
+          <div class="quote-form-card">
+
+            <h3
+              style="
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                color: var(--text-main);
+              "
+            >
+              Request a Quote
+            </h3>
+
+
+            <form id="quoteForm">
+
+              <!-- Full Name -->
+              <div class="form-group">
+
+                <label
+                  class="form-label"
+                  for="fullName"
+                >
+                  Full Name *
+                </label>
+
+                <input
+                  type="text"
+                  id="fullName"
+                  class="form-input"
+                  required
+                  autocomplete="name"
+                  placeholder="Your full name"
+                >
+
+              </div>
+
+
+              <!-- Company -->
+              <div class="form-group">
+
+                <label
+                  class="form-label"
+                  for="companyName"
+                >
+                  Company Name
+                </label>
+
+                <input
+                  type="text"
+                  id="companyName"
+                  class="form-input"
+                  autocomplete="organization"
+                  placeholder="Company or engineering office (optional)"
+                >
+
+              </div>
+
+
+              <!-- Phone + Email -->
+              <div class="form-row">
+
+                <div class="form-group">
+
+                  <label
+                    class="form-label"
+                    for="phoneNum"
+                  >
+                    Phone Number *
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phoneNum"
+                    class="form-input"
+                    required
+                    autocomplete="tel"
+                    placeholder="01XXXXXXXXX"
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label
+                    class="form-label"
+                    for="emailAddr"
+                  >
+                    Email
+                  </label>
+
+                  <input
+                    type="email"
+                    id="emailAddr"
+                    class="form-input"
+                    autocomplete="email"
+                    placeholder="name@domain.com"
+                  >
+
+                </div>
+
+              </div>
+
+
+              <!-- Project Type + Location -->
+              <div class="form-row">
+
+                <div class="form-group">
+
+                  <label
+                    class="form-label"
+                    for="projectType"
+                  >
+                    Project Type *
+                  </label>
+
+                  <select
+                    id="projectType"
+                    class="form-select"
+                    required
+                  >
+                    <option
+                      value=""
+                      disabled
+                      selected
+                    >
+                      Select type
+                    </option>
+
+                    <option value="Residential">
+                      Residential
+                    </option>
+
+                    <option value="Commercial">
+                      Commercial
+                    </option>
+
+                    <option value="Other">
+                      Other
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label
+                    class="form-label"
+                    for="projectLocation"
+                  >
+                    Project Location *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="projectLocation"
+                    class="form-input"
+                    required
+                    placeholder="City / Area"
+                  >
+
+                </div>
+
+              </div>
+
+
+              <!-- Project Details -->
+              <div class="form-group">
+
+                <label
+                  class="form-label"
+                  for="projectMessage"
+                >
+                  Message / Project Details
+                </label>
+
+                <textarea
+                  id="projectMessage"
+                  class="form-textarea"
+                  placeholder="Briefly describe your finishing requirements..."
+                ></textarea>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%;"
+              >
+                Submit via WhatsApp
+              </button>
+
+
+              <div
+                class="form-notice"
+                id="formNotice"
+                role="status"
+                aria-live="polite"
+              >
+                <strong>Request Prepared!</strong><br>
+
+                Your request details have been opened in WhatsApp.
+                Please review the details and press
+                <strong>Send</strong>
+                in your WhatsApp app.
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <a
+            href="#"
+            class="brand"
+            aria-label="ALHAMD Home"
+          >
+            ALHAMD
+            <span class="ar-brand">
+              | الحمد
+            </span>
+          </a>
+
+          <p class="footer-brand-desc">
+            Interior finishing and contracting for residential and commercial projects across Egypt.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4 class="footer-col-title">
+            Navigation
+          </h4>
+
+          <ul class="footer-links">
+
+            <li>
+              <a
+                href="#about"
+                class="footer-link"
+              >
+                About
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#services"
+                class="footer-link"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#concepts"
+                class="footer-link"
+              >
+                Concepts
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#projects"
+                class="footer-link"
+              >
+                Projects
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4 class="footer-col-title">
+            Contact
+          </h4>
+
+          <ul class="footer-links">
+
+            <li>
+              <a
+                href="#contact"
+                class="footer-link"
+              >
+                Request a Quote
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/201006848409"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-link"
+              >
+                WhatsApp
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="mailto:akhaled7835@gmail.com"
+                class="footer-link"
+              >
+                Email
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          &copy; 2026 ALHAMD. All rights reserved.
+        </div>
+
+        <div>
+          Interior Finishing &amp; Contracting
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       CONCEPT MODAL
+  ========================================================= -->
+
+  <div
+    class="modal-overlay"
+    id="conceptModal"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="modalTitle"
+  >
+
+    <div class="modal-container">
+
+      <div class="modal-header">
+
+        <div class="modal-title-wrap">
+
+          <span
+            id="modalNumber"
+            style="
+              font-size: 0.75rem;
+              font-weight: 700;
+              color: var(--accent-bronze);
+            "
+          >
+            CONCEPT 01
+          </span>
+
+          <h3
+            id="modalTitle"
+            class="modal-title"
+          >
+            Modern Villa
+          </h3>
+
+          <span
+            id="modalCategory"
+            class="modal-subtitle"
+          >
+            Residential Interior Concept
+          </span>
+
+        </div>
+
+
+        <button
+          class="modal-close"
+          id="modalCloseBtn"
+          type="button"
+          aria-label="Close Lightbox"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <line
+              x1="18"
+              y1="6"
+              x2="6"
+              y2="18"
+            ></line>
+
+            <line
+              x1="6"
+              y1="6"
+              x2="18"
+              y2="18"
+            ></line>
+          </svg>
+        </button>
+
+      </div>
+
+
+      <div class="modal-body">
+
+        <div
+          class="ba-slider-container"
+          id="baSlider"
+        >
+
+          <img
+            id="imgAfter"
+            class="ba-image"
+            src=""
+            alt=""
+          >
+
+
+          <div
+            class="ba-overlay"
+            id="baOverlay"
+          >
+
+            <img
+              id="imgBefore"
+              class="ba-image"
+              src=""
+              alt=""
+            >
+
+          </div>
+
+
+          <div
+            class="ba-divider"
+            id="baDivider"
+          >
+
+            <div
+              class="ba-handle"
+              aria-hidden="true"
+            >
+
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <polyline
+                  points="15 18 9 12 15 6"
+                ></polyline>
+
+                <polyline
+                  points="9 18 15 12 9 6"
+                  style="display:none;"
+                ></polyline>
+
+                <path
+                  d="M8 12h8"
+                  style="display:none;"
+                ></path>
+
+                <circle
+                  cx="7"
+                  cy="12"
+                  r="1"
+                  fill="currentColor"
+                ></circle>
+
+                <circle
+                  cx="17"
+                  cy="12"
+                  r="1"
+                  fill="currentColor"
+                ></circle>
+              </svg>
+
+            </div>
+
+          </div>
+
+
+          <span class="ba-label ba-label-before">
+            BEFORE
+          </span>
+
+          <span class="ba-label ba-label-after">
+            AFTER
+          </span>
+
+        </div>
+
+
+        <p
+          style="
+            font-size: 0.8125rem;
+            color: var(--text-light);
+            text-align: center;
+          "
+        >
+          Drag the center divider horizontally to compare existing space (Before) with the finishing design concept (After).
+        </p>
+
+      </div>
+
+
+      <div class="modal-footer">
+
+        <button
+          class="modal-nav-btn"
+          id="modalPrevBtn"
+          type="button"
+        >
+
+          <svg
+            width="16"
+            height="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <polyline
+              points="15 18 9 12 15 6"
+            ></polyline>
+          </svg>
+
+          Previous Concept
+
+        </button>
+
+
+        <button
+          class="modal-nav-btn"
+          id="modalNextBtn"
+          type="button"
+        >
+
+          Next Concept
+
+          <svg
+            width="16"
+            height="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <polyline
+              points="9 18 15 12 9 6"
+            ></polyline>
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================= -->
+
+  <script>
+
+    /* =========================================================
+       CONCEPT DATA
+    ========================================================= */
+
+    const conceptsData = [
+
+      {
+        id: '01',
+        title: 'Modern Villa',
+        category: 'Residential Interior Concept',
+        beforeImg: 'assets/concepts/modern-villa-before.jpg',
+        afterImg: 'assets/concepts/modern-villa-after.jpg'
+      },
+
+      {
+        id: '02',
+        title: 'Contemporary Apartment',
+        category: 'Residential Interior Concept',
+        beforeImg: 'assets/concepts/contemporary-apartment-before.jpg',
+        afterImg: 'assets/concepts/contemporary-apartment-after.jpg'
+      },
+
+      {
+        id: '03',
+        title: 'Corporate Office',
+        category: 'Commercial Interior Concept',
+        beforeImg: 'assets/concepts/corporate-office-before.jpg',
+        afterImg: 'assets/concepts/corporate-office-after.jpg'
+      },
+
+      {
+        id: '04',
+        title: 'Executive Reception',
+        category: 'Corporate Interior Concept',
+        beforeImg: 'assets/concepts/executive-reception-before.jpg',
+        afterImg: 'assets/concepts/executive-reception-after.jpg'
+      },
+
+      {
+        id: '05',
+        title: 'Modern Kitchen',
+        category: 'Residential Interior Concept',
+        beforeImg: 'assets/concepts/modern-kitchen-before.jpg',
+        afterImg: 'assets/concepts/modern-kitchen-after.jpg'
+      },
+
+      {
+        id: '06',
+        title: 'Modern Commercial Space',
+        category: 'Commercial Interior Concept',
+        beforeImg: 'assets/concepts/modern-commercial-before.jpg',
+        afterImg: 'assets/concepts/modern-commercial-after.jpg'
+      }
+
+    ];
+
+
+    /* =========================================================
+       PLACEHOLDER GENERATOR
+    ========================================================= */
+
+    function createCleanPlaceholderSvg(id, title, state) {
+
+      const isBefore = state === 'BEFORE';
+
+      const bgColor =
+        isBefore
+          ? '#E7E5E4'
+          : '#F5EFE6';
+
+      const strokeColor =
+        isBefore
+          ? '#A8A29E'
+          : '#8C6A43';
+
+      const textSub =
+        isBefore
+          ? 'Existing Geometry'
+          : 'Finishing Concept';
+
+
+      const svg = `
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="800"
+          height="500"
+          viewBox="0 0 800 500"
+        >
+
+          <rect
+            width="800"
+            height="500"
+            fill="${bgColor}"
+          />
+
+          <line
+            x1="100"
+            y1="0"
+            x2="100"
+            y2="500"
+            stroke="${strokeColor}"
+            stroke-opacity="0.15"
+            stroke-width="1"
+          />
+
+          <line
+            x1="700"
+            y1="0"
+            x2="700"
+            y2="500"
+            stroke="${strokeColor}"
+            stroke-opacity="0.15"
+            stroke-width="1"
+          />
+
+          <line
+            x1="0"
+            y1="350"
+            x2="800"
+            y2="350"
+            stroke="${strokeColor}"
+            stroke-opacity="0.2"
+            stroke-width="1"
+          />
+
+          <path
+            d="M 100 350 L 250 150 L 700 350"
+            fill="none"
+            stroke="${strokeColor}"
+            stroke-opacity="0.25"
+            stroke-width="1.5"
+            stroke-dasharray="4 4"
+          />
+
+          <rect
+            x="330"
+            y="200"
+            width="140"
+            height="32"
+            rx="16"
+            fill="${strokeColor}"
+            fill-opacity="0.15"
+          />
+
+          <text
+            x="400"
+            y="221"
+            font-family="sans-serif"
+            font-size="13"
+            font-weight="700"
+            fill="${strokeColor}"
+            text-anchor="middle"
+            letter-spacing="1.5"
+          >
+            ${state}
+          </text>
+
+          <text
+            x="400"
+            y="265"
+            font-family="sans-serif"
+            font-size="20"
+            font-weight="700"
+            fill="#1C1917"
+            text-anchor="middle"
+          >
+            ${id} — ${title}
+          </text>
+
+          <text
+            x="400"
+            y="290"
+            font-family="sans-serif"
+            font-size="14"
+            fill="#57534E"
+            text-anchor="middle"
+          >
+            ${textSub}
+          </text>
+
+        </svg>
+      `;
+
+      return (
+        'data:image/svg+xml;charset=utf-8,' +
+        encodeURIComponent(svg)
+      );
+    }
+
+
+    /* =========================================================
+       MOBILE NAVIGATION
+    ========================================================= */
+
+    const mobileMenuBtn =
+      document.getElementById('mobileMenuBtn');
+
+    const mobileMenu =
+      document.getElementById('mobileMenu');
+
+    const mobileNavLinks =
+      document.querySelectorAll('.mobile-nav-link');
+
+
+    function toggleMobileMenu() {
+
+      const isActive =
+        mobileMenu.classList.toggle('active');
+
+      mobileMenu.setAttribute(
+        'aria-hidden',
+        String(!isActive)
+      );
+
+      mobileMenuBtn.setAttribute(
+        'aria-expanded',
+        String(isActive)
+      );
+    }
+
+
+    mobileMenuBtn.addEventListener(
+      'click',
+      toggleMobileMenu
+    );
+
+
+    mobileNavLinks.forEach((link) => {
+
+      link.addEventListener('click', () => {
+
+        if (
+          mobileMenu.classList.contains('active')
+        ) {
+          toggleMobileMenu();
+        }
+
+      });
+
+    });
+
+
+    /* =========================================================
+       MODAL & BEFORE / AFTER SLIDER
+    ========================================================= */
+
+    let currentConceptIndex = 0;
+    let isModalDragging = false;
+
+
+    const modal =
+      document.getElementById('conceptModal');
+
+    const modalNumber =
+      document.getElementById('modalNumber');
+
+    const modalTitle =
+      document.getElementById('modalTitle');
+
+    const modalCategory =
+      document.getElementById('modalCategory');
+
+    const modalCloseBtn =
+      document.getElementById('modalCloseBtn');
+
+    const modalPrevBtn =
+      document.getElementById('modalPrevBtn');
+
+    const modalNextBtn =
+      document.getElementById('modalNextBtn');
+
+    const imgBefore =
+      document.getElementById('imgBefore');
+
+    const imgAfter =
+      document.getElementById('imgAfter');
+
+    const modalSlider =
+      document.getElementById('baSlider');
+
+    const modalOverlay =
+      document.getElementById('baOverlay');
+
+    const modalDivider =
+      document.getElementById('baDivider');
+
+
+    /* =========================================================
+       LOAD CONCEPT
+    ========================================================= */
+
+    function loadConceptData(index) {
+
+      currentConceptIndex = index;
+
+      const data =
+        conceptsData[index];
+
+
+      modalNumber.textContent =
+        `CONCEPT ${data.id}`;
+
+      modalTitle.textContent =
+        data.title;
+
+      modalCategory.textContent =
+        data.category;
+
+
+      const fallbackBefore =
+        createCleanPlaceholderSvg(
+          data.id,
+          data.title,
+          'BEFORE'
+        );
+
+
+      const fallbackAfter =
+        createCleanPlaceholderSvg(
+          data.id,
+          data.title,
+          'AFTER'
+        );
+
+
+      imgBefore.onerror = function () {
+
+        this.onerror = null;
+
+        this.src = fallbackBefore;
+      };
+
+
+      imgAfter.onerror = function () {
+
+        this.onerror = null;
+
+        this.src = fallbackAfter;
+      };
+
+
+      imgBefore.src =
+        data.beforeImg;
+
+      imgAfter.src =
+        data.afterImg;
+
+
+      setModalSliderPosition(50);
+    }
+
+
+    /* =========================================================
+       OPEN / CLOSE MODAL
+    ========================================================= */
+
+    function openModal(index) {
+
+      loadConceptData(index);
+
+      modal.classList.add('active');
+
+      modal.setAttribute(
+        'aria-hidden',
+        'false'
+      );
+
+      document.body.style.overflow =
+        'hidden';
+
+
+      requestAnimationFrame(() => {
+
+        updateModalImageWidth();
+
+        setModalSliderPosition(50);
+
+      });
+    }
+
+
+    function closeModal() {
+
+      modal.classList.remove('active');
+
+      modal.setAttribute(
+        'aria-hidden',
+        'true'
+      );
+
+      document.body.style.overflow =
+        '';
+    }
+
+
+    /* =========================================================
+       MODAL BUTTONS
+    ========================================================= */
+
+    modalCloseBtn.addEventListener(
+      'click',
+      closeModal
+    );
+
+
+    modalPrevBtn.addEventListener(
+      'click',
+      () => {
+
+        const previousIndex =
+          (
+            currentConceptIndex -
+            1 +
+            conceptsData.length
+          ) %
+          conceptsData.length;
+
+        openModal(previousIndex);
+      }
+    );
+
+
+    modalNextBtn.addEventListener(
+      'click',
+      () => {
+
+        const nextIndex =
+          (
+            currentConceptIndex +
+            1
+          ) %
+          conceptsData.length;
+
+        openModal(nextIndex);
+      }
+    );
+
+
+    /* =========================================================
+       BACKDROP CLOSE
+    ========================================================= */
+
+    modal.addEventListener(
+      'click',
+      (event) => {
+
+        if (
+          event.target === modal
+        ) {
+          closeModal();
+        }
+
+      }
+    );
+
+
+    /* =========================================================
+       KEYBOARD CONTROLS
+    ========================================================= */
+
+    window.addEventListener(
+      'keydown',
+      (event) => {
+
+        if (
+          !modal.classList.contains('active')
+        ) {
+          return;
+        }
+
+
+        if (event.key === 'Escape') {
+
+          closeModal();
+
+          return;
+        }
+
+
+        if (event.key === 'ArrowLeft') {
+
+          modalPrevBtn.click();
+
+          return;
+        }
+
+
+        if (event.key === 'ArrowRight') {
+
+          modalNextBtn.click();
+        }
+
+      }
+    );
+
+
+    /* =========================================================
+       MODAL SLIDER POSITION
+    ========================================================= */
+
+    function setModalSliderPosition(
+      percentage
+    ) {
+
+      const value =
+        Math.max(
+          0,
+          Math.min(
+            100,
+            Number(percentage)
+          )
+        );
+
+
+      if (modalOverlay) {
+
+        modalOverlay.style.width =
+          `${value}%`;
+      }
+
+
+      if (modalDivider) {
+
+        modalDivider.style.left =
+          `${value}%`;
+      }
+    }
+
+
+    /* =========================================================
+       MODAL IMAGE WIDTH
+    ========================================================= */
+
+    function updateModalImageWidth() {
+
+      if (
+        !modalSlider ||
+        !imgBefore
+      ) {
+        return;
+      }
+
+
+      const width =
+        modalSlider.getBoundingClientRect().width;
+
+
+      modalOverlay.style.setProperty(
+        '--container-width',
+        `${width}px`
+      );
+
+
+      imgBefore.style.width =
+        `${width}px`;
+    }
+
+
+    /* =========================================================
+       MODAL POINTER CALCULATION
+    ========================================================= */
+
+    function getModalPercentage(
+      clientX
+    ) {
+
+      const rect =
+        modalSlider.getBoundingClientRect();
+
+
+      if (!rect.width) {
+        return 50;
+      }
+
+
+      const x =
+        clientX -
+        rect.left;
+
+
+      return Math.max(
+        0,
+        Math.min(
+          100,
+          (x / rect.width) * 100
+        )
+      );
+    }
+
+
+    /* =========================================================
+       MODAL DRAG
+    ========================================================= */
+
+    function handleModalPointerMove(
+      event
+    ) {
+
+      if (!isModalDragging) {
+        return;
+      }
+
+
+      const clientX =
+        event.touches &&
+        event.touches.length
+          ? event.touches[0].clientX
+          : event.clientX;
+
+
+      const percentage =
+        getModalPercentage(clientX);
+
+
+      setModalSliderPosition(
+        percentage
+      );
+    }
+
+
+    modalSlider.addEventListener(
+      'mousedown',
+      (event) => {
+
+        event.preventDefault();
+
+        isModalDragging = true;
+
+        setModalSliderPosition(
+          getModalPercentage(
+            event.clientX
+          )
+        );
+      }
+    );
+
+
+    modalSlider.addEventListener(
+      'touchstart',
+      (event) => {
+
+        isModalDragging = true;
+
+        setModalSliderPosition(
+          getModalPercentage(
+            event.touches[0].clientX
+          )
+        );
+      },
+      {
+        passive: true
+      }
+    );
+
+
+    window.addEventListener(
+      'mousemove',
+      handleModalPointerMove
+    );
+
+
+    window.addEventListener(
+      'touchmove',
+      handleModalPointerMove,
+      {
+        passive: true
+      }
+    );
+
+
+    window.addEventListener(
+      'mouseup',
+      () => {
+        isModalDragging = false;
+      }
+    );
+
+
+    window.addEventListener(
+      'touchend',
+      () => {
+        isModalDragging = false;
+      }
+    );
+
+
+    window.addEventListener(
+      'resize',
+      updateModalImageWidth
+    );
+
+
+    /* =========================================================
+       CARD SLIDERS
+    ========================================================= */
+
+    const conceptCards =
+      document.querySelectorAll(
+        '.concept-card'
+      );
+
+
+    conceptCards.forEach(
+      (card, index) => {
+
+        const slider =
+          card.querySelector(
+            '.ba-slider'
+          );
+
+        const overlay =
+          card.querySelector(
+            '.ba-overlay'
+          );
+
+        const range =
+          card.querySelector(
+            '.ba-range'
+          );
+
+        const beforeImage =
+          overlay
+            ? overlay.querySelector(
+                '.concept-img'
+              )
+            : null;
+
+
+        if (
+          !slider ||
+          !overlay ||
+          !range
+        ) {
+          return;
+        }
+
+
+        function updateCardSlider(
+          value
+        ) {
+
+          const percentage =
+            Math.max(
+              0,
+              Math.min(
+                100,
+                Number(value)
+              )
+            );
+
+
+          overlay.style.width =
+            `${percentage}%`;
+
+
+          if (beforeImage) {
+
+            beforeImage.style.width =
+              `${slider.getBoundingClientRect().width}px`;
+          }
+        }
+
+
+        /* Range input */
+
+        range.addEventListener(
+          'input',
+          (event) => {
+
+            event.stopPropagation();
+
+            updateCardSlider(
+              event.target.value
+            );
+          }
+        );
+
+
+        range.addEventListener(
+          'click',
+          (event) => {
+
+            event.stopPropagation();
+          }
+        );
+
+
+        /* Direct dragging */
+
+        let isCardDragging = false;
+
+
+        function updateCardFromPointer(
+          clientX
+        ) {
+
+          const rect =
+            slider.getBoundingClientRect();
+
+
+          if (!rect.width) {
+            return;
+          }
+
+
+          const x =
+            clientX -
+            rect.left;
+
+
+          const percentage =
+            Math.max(
+              0,
+              Math.min(
+                100,
+                (x / rect.width) * 100
+              )
+            );
+
+
+          range.value =
+            percentage;
+
+
+          updateCardSlider(
+            percentage
+          );
+        }
+
+
+        slider.addEventListener(
+          'mousedown',
+          (event) => {
+
+            if (
+              event.target === range
+            ) {
+              return;
+            }
+
+
+            isCardDragging = true;
+
+
+            updateCardFromPointer(
+              event.clientX
+            );
+          }
+        );
+
+
+        slider.addEventListener(
+          'touchstart',
+          (event) => {
+
+            if (
+              event.target === range
+            ) {
+              return;
+            }
+
+
+            isCardDragging = true;
+
+
+            updateCardFromPointer(
+              event.touches[0].clientX
+            );
+          },
+          {
+            passive: true
+          }
+        );
+
+
+        function handleCardMove(
+          event
+        ) {
+
+          if (!isCardDragging) {
+            return;
+          }
+
+
+          const clientX =
+            event.touches &&
+            event.touches.length
+              ? event.touches[0].clientX
+              : event.clientX;
+
+
+          updateCardFromPointer(
+            clientX
+          );
+        }
+
+
+        window.addEventListener(
+          'mousemove',
+          handleCardMove
+        );
+
+
+        window.addEventListener(
+          'touchmove',
+          handleCardMove,
+          {
+            passive: true
+          }
+        );
+
+
+        window.addEventListener(
+          'mouseup',
+          () => {
+            isCardDragging = false;
+          }
+        );
+
+
+        window.addEventListener(
+          'touchend',
+          () => {
+            isCardDragging = false;
+          }
+        );
+
+
+        /* Initial position */
+
+        updateCardSlider(
+          range.value || 50
+        );
+
+
+        /* Open modal */
+
+        card.addEventListener(
+          'click',
+          (event) => {
+
+            /*
+              Clicking the range should only
+              control the slider.
+            */
+
+            if (
+              event.target.closest(
+                '.ba-range'
+              )
+            ) {
+              return;
+            }
+
+
+            /*
+              Clicking anywhere else on the
+              card, including the image,
+              opens the modal.
+            */
+
+            openModal(index);
+          }
+        );
+
+
+        /* Keep image aligned after resize */
+
+        window.addEventListener(
+          'resize',
+          () => {
+
+            updateCardSlider(
+              range.value || 50
+            );
+          }
+        );
+
+      }
+    );
+
+
+    /* =========================================================
+       QUOTE FORM → WHATSAPP
+    ========================================================= */
+
+    const quoteForm =
+      document.getElementById(
+        'quoteForm'
+      );
+
+    const formNotice =
+      document.getElementById(
+        'formNotice'
+      );
+
+
+    quoteForm.addEventListener(
+      'submit',
+      function (event) {
+
+        event.preventDefault();
+
+
+        const fullName =
+          document
+            .getElementById('fullName')
+            .value
+            .trim();
+
+
+        const companyName =
+          document
+            .getElementById('companyName')
+            .value
+            .trim() ||
+          'N/A';
+
+
+        const phoneNum =
+          document
+            .getElementById('phoneNum')
+            .value
+            .trim();
+
+
+        const emailAddr =
+          document
+            .getElementById('emailAddr')
+            .value
+            .trim() ||
+          'N/A';
+
+
+        const projectType =
+          document
+            .getElementById('projectType')
+            .value;
+
+
+        const projectLocation =
+          document
+            .getElementById(
+              'projectLocation'
+            )
+            .value
+            .trim();
+
+
+        const message =
+          document
+            .getElementById(
+              'projectMessage'
+            )
+            .value
+            .trim() ||
+          'N/A';
+
+
+        const formattedText =
+`Hello ALHAMD, I would like to request a quote.
+
+Full Name: ${fullName}
+Company Name: ${companyName}
+Phone Number: ${phoneNum}
+Email: ${emailAddr}
+Project Type: ${projectType}
+Project Location: ${projectLocation}
+
+Project Details:
+${message}
+
+Thank you.`;
+
+
+        const whatsappUrl =
+          `https://wa.me/201006848409?text=${encodeURIComponent(formattedText)}`;
+
+
+        window.open(
+          whatsappUrl,
+          '_blank',
+          'noopener,noreferrer'
+        );
+
+
+        formNotice.style.display =
+          'block';
+
+      }
+    );
+
+  </script>
+
+</body>
+</html>
